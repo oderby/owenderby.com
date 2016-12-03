@@ -1,0 +1,15 @@
+blockquote {
+    color: #757575;
+}
+
+.footnotes {
+    font-size: 14px;
+    line-height: normal;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0px 5px;
+    text-align: center;
+}
