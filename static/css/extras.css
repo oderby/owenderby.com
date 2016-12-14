@@ -13,3 +13,30 @@ table, th, td {
     padding: 0px 5px;
     text-align: center;
 }
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-size: medium;
+}
+
+div.footer {
+    border-bottom-color: #0068c1;
+}
+
+html {
+    border: none;
+    margin: 10px auto 10px;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+body {
+    border-top-color: #0068c1;
+    border-top-width: 5px;
+}

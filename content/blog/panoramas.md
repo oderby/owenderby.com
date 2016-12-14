@@ -15,12 +15,16 @@ know. So I borrowed an old Nikon D40 from a friend and sort of just dove
 in. Turns out, it's not very difficult to go from n00b to novice, and it's even
 easier to take a lot of photos...but that's a story for another day.
 
-One of the challenges I (unwittingly) set for myself was creating panoramas. It
-seems straightforward in theory - take a series of overlapping photos and then
-combine them using software. Afterall, most modern smart phones have panorama
-modes built into their camera apps. However, as I soon learned, it can very
-easily turn into a deep, interesting ~~trap~~rabbit hole of techniques and
-details, both on the photo-taking and post-processing side.
+{{< figure src="/img/panos/DSC_0061 - DSC_0064_med.jpg" link="/img/panos/DSC_0061 - DSC_0064.jpg" width="100%"
+ caption="Train passing through the valley below." >}}
+
+One of the challenges I (unwittingly) set for myself was creating panoramas,
+like the one above. It seems straightforward in theory - take a series of
+overlapping photos and then combine them using software. Afterall, most modern
+smart phones have panorama modes built into their camera apps. However, as I
+soon learned, it can very easily turn into a deep, interesting ~~trap~~rabbit
+hole of techniques and details, both on the photo-taking and post-processing
+side.
 
 This post is a summary of my findings from figuring out how to create panoramas
 from individual photos, and then uploading them to Facebook

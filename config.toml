@@ -19,18 +19,18 @@ ignoreFiles = ["LICENSE.md"]
 [params]
   avatar = "profile.jpg"
   author = "Owen Derby"
-  description = "Describe your website"
+  description = "My personal soap box."
 
   # Custom assets can be linked with their paths relative to static/
   custom_css = []
   custom_js  = []
 
 [social]
-  Github        = "username"
-  Email         = "email@example.com"
-  Twitter       = "username"
-  LinkedIn      = "username"
-  Stackoverflow = "username"
+  Github        = "oderby"
+  # Email         = "email@example.com"
+  LinkedIn      = "oderby"
+  Twitter       = "ocderby"
+  # Stackoverflow = "username"
 
 ## Main Menu
 [[menu.main]]
@@ -43,8 +43,8 @@ ignoreFiles = ["LICENSE.md"]
   identifier = "projects"
   weight = 200
   url = "/projects/"
-[[menu.main]]
-  name = "resume"
-  identifier = "resume"
-  weight = 300
-  url = "/resume/"
+# [[menu.main]]
+#   name = "resume"
+#   identifier = "resume"
+#   weight = 300
+#   url = "/resume/"
