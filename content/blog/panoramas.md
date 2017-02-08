@@ -15,26 +15,25 @@ know. So I borrowed an old Nikon D40 from a friend and sort of just dove
 in. Turns out, it's not very difficult to go from n00b to novice, and it's even
 easier to take a lot of photos...but that's a story for another day.
 
-{{< figure src="/img/panos/DSC_0061 - DSC_0064_med.jpg" link="/img/panos/DSC_0061 - DSC_0064.jpg" width="100%"
- caption="Train passing through the valley below." >}}
+{{% fig src="/img/panos/pano_sample.jpg" %}} A lovely creek in Boise National
+Forest. {{% /fig %}}
 
 One of the challenges I (unwittingly) set for myself was creating panoramas,
-like the one above. It seems straightforward in theory - take a series of
+like the one above. It seems straightforward in theory - shoot a series of
 overlapping photos and then combine them using software. Afterall, most modern
 smart phones have panorama modes built into their camera apps. However, as I
-soon learned, it can very easily turn into a deep, interesting ~~trap~~rabbit
-hole of techniques and details, both on the photo-taking and post-processing
-side.
+soon learned, it can very easily turn into a deep, interesting ~~trap~~ rabbit
+hole of techniques and details.
 
 This post is a summary of my findings from figuring out how to create panoramas
-from individual photos, and then uploading them to Facebook
-as "Photo Spheres"[^6]. This wasn't as simple as I expected it to be, so I wanted to
+from individual photos, and then uploading them to Facebook as "Photo
+Spheres"[^6]. This wasn't as simple as I expected it to be, so I wanted to
 record my insights and process, for my future self and anyone else who is silly
-enough to try and do this.
+enough to try for themselves.
 
 One last aside - I work predominantly on Ubuntu with FOSS, so this is written
-assuming you're using a similar environment. This is definitely possible using
-Photoshop (heck, it's probably much easier), but YMMV.
+using entirely open source tools. This is definitely possible using Photoshop
+(heck, it's probably much easier), but YMMV.
 
 ## Making the Panorama
 
@@ -50,6 +49,25 @@ This section focuses on part A.
 
 ### Taking the Photos
 
+<div class='row'>
+    <div class='col-xs-6 col-sm-3'>
+        {{% fig src="/img/panos/a.JPG" /%}}
+    </div>
+    <div class='col-xs-6 col-sm-3'>
+        {{% fig src="/img/panos/b.JPG" /%}}
+    </div>
+    <div class='col-xs-6 col-sm-3'>
+        {{% fig src="/img/panos/c.JPG" /%}}
+    </div>
+    <div class='col-xs-6 col-sm-3'>
+        {{% fig src="/img/panos/d.JPG" /%}}
+    </div>
+</div>
+<div class='caption'>
+    <p></p>
+    <p>4 individuals photos.</p>
+</div>
+
 Since I was just starting out with a borrowed camera, I wasn't very
 sophisticated in my setup for taking the panorama shots. I shot hand-held, and
 used the horizon as my reference as I swept my camera across the scene, taking
@@ -61,11 +79,11 @@ shots (google "philopod" if you're curious).
 Nevertheless, I found I was able to produce decent panoramas, once I learned how
 to keep the exposure and white balance the same in every picture.
 
-> ***Insight #1*** – Consider using
+> ***ProTip #1*** – Consider using
 > the [AutoExposure-Lock](https://photographylife.com/nikon-ae-l-af-l-button)
 > feature of your camera when taking a photo series for a panorama. It makes the
 > resulting panorama look more natural and contiguous, at the cost of some
-> places being incorrectly exposed.
+> places potentially being under- or over-exposed.
 
 I didn't have many problems with parallax, since I was taking mostly wide-angle
 landscape panoramas. But I now know that I can reduce parallax effects by
@@ -113,35 +131,36 @@ Hugin:
    very subtle change to the panorama - if instead it turns your panorama into
    an 'S', Hugin probably has your lens information or focal length wrong[^5].
 
-***midway point image***
+{{% fig src="/img/panos/int_pano_hugin.jpg" %}}Panorama so far.{{% /fig %}}
 
-Okay, so now at this point you have a choice, depending on what sort of panorama
-you want to produce. Typically, you'll want to produce a Photo Sphere, which is a
-much cooler way to show off your panorama. In that case, proceed to the
+Okay, so now you have a choice, depending on what sort of panorama you want to
+produce. Typically, you'll want to produce a Photo Sphere, which is a much
+cooler way to show off your panorama. In that case, proceed to the
 next [section]({{< relref "#make-sphere" >}}) now.
 
 However, sometimes you just want a flat, cropped panorama. I typically opt for
-this when the estimated horizontal FOV[^8] is ≤160° or I'm just stitching together a
-couple photos (not really a panorama). To do this, continue:
+this when the estimated horizontal FOV[^8] is ≤160° or I'm just stitching
+together a couple photos (not really a panorama). To do this, we continue from
+above:
 
 1. Switch to 'Advanced' interface.
-2. Go to 'Stitching' tab and...
+2. Go to 'Stitcher' tab and...
   1. Press 'Calculate Optimal Size'
-  2. Press 'Fit Cropt to Images'
+  2. Press 'Fit Crop to Images'
   3. Ensure 'Exposure corrected, low dynamic range' is the only option selected.
   4. Change the format to 'JPEG'
   5. Press 'Stitch!' button and choose place to save hugin project file, then
      name and place to save resulting panorama.
 
-That's it - you should have a nice, clear panorama to post as you like!
+{{% fig src="/img/panos/flat_pano.jpg" %}}Finished flat panorama.{{% /fig %}}
 
-***flat, cropped panorama image***
+That's it - you should have a nice, clear panorama to post as you like!
 
 ## Making a Photo Sphere[^12] {#make-sphere}
 
-Now, the panorama is basically done, you just need to massage it into a format
-that Facebook will accept and recognize as a 360° image[^9]. To do so, several
-important steps remain.
+Instead, you might want to post your panorama as a Photo Sphere. To do so, you
+just need to massage it into a size and shape that Facebook will accept and
+recognize as a 360° image[^9].
 
 ### Image Shape
 
@@ -178,7 +197,8 @@ First, you need to make your panorama fit into one of seven predefined sizes
 
 This should result in something that looks like the following:
 
-***Flattened 360 panorama***
+{{% fig src="/img/panos/flat_photosphere.jpg" %}} Photosphere (shown as
+regular image, so appears flat). {{% /fig %}}
 
 ### Image Metadata
 
@@ -191,13 +211,24 @@ sure to replace `path/to/image.jpg` with the appropriate path to your image.
 
 ### Uploading to Facebook
 
-Finally! You're ready to upload to facebook...or are you? Well, you are, but you
-can only upload to the web (desktop) version of Facebook, and you have to post
-it directly to your timeline (you can't add it to an album directly[^14]), and you
-can only upload one panorama at a time.
+Finally! You're ready to upload to facebook...or are you? Well, you are, but
+Facebook imposes the following restrictions:
+
+* You can only upload to the web (desktop) version of Facebook...
+* ... and you have to post it directly to your timeline (you can't add it to an
+album directly[^14])
+* ... and you can only upload one panorama at a time.
+
+If you follow all those steps, then it should totally work and you will end up
+with an awesome Photo Sphere to share with all your friends.
+
+{{< figure src="/img/panos/fb_photosphere.jpg" width="100%"
+    link="https://www.facebook.com/oderby/posts/10154843778091522"
+    caption="Click to view the photosphere on Facebook." >}}
 
 ## Future Directions
-That's it! Hope it was useful, or at least insightful...
+That's it! I hope if you made it this far you found this guide useful, or at
+least insightful...
 
 If I have time, I'd like to investigate the following areas:
 
@@ -212,7 +243,7 @@ If I have time, I'd like to investigate the following areas:
 
 [^1]: Alright, the only one I found that I actually tried. But after further searching, it seems to actually be the best one out there.
 
-[^2]: I just fell, again, into the deep ~~trap~~rabbit hole again figuring out where to point to for a good summary document here...
+[^2]: I just fell, again, into the deep ~~trap~~ rabbit hole again figuring out where to point to for a good summary document here...
 
 [^4]: Yes, that is the [correct spelling](https://en.wikipedia.org/wiki/CliffsNotes)...
 
