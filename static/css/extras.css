@@ -14,7 +14,7 @@ table, th, td {
     text-align: center;
 }
 
-figcaption {
+figcaption, .caption {
     font-style: italic;
     text-align: center;
     font-size: medium;
