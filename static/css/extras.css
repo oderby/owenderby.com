@@ -52,3 +52,11 @@ body {
 .panel {
     box-shadow: none;
 }
+
+.container a:hover {
+    color: #2269a8;
+}
+
+.container a {
+    color: #13c76d;
+}
