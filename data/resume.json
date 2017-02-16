@@ -1,177 +1,200 @@
 {
-  "basics": {
-    "name": "Owen C. Derby",
-    "label": "Programmer",
-    "picture": "",
-    "email": "",
-    "phone": "",
-    "website": "https://owenderby.com",
-    "summary": "Summary of Owen goes here",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+    "basics": {
+        "name": "Owen C. Derby",
+        "website": "https://owenderby.com",
+        "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building a new sub-system, I'm adept at jumping into a variety of different projects and producing results. If you like to classify people, I'm somewhere between a 'full-stack' and 'generalist' developer, although I've also had experience as a project manager. Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling and taking photos, playing any variety of game with friends (so long as it involves more thinking than randomness). I'm also a ping-pong enthusiast, and have been known join in the occasional pick-up basketball and soccer games. Currently, I'm contributing actively to the [5calls](5calls.org) project and finding ways to empower my peers to be better citizens."
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "ocderby",
-        "url": "https://twitter.com/ocderby"
-      },
-      {
-        "network": "GitHub",
-        "username": "oderby",
-        "url": "https://github.com/oderby"
-      }
-    ]
-  },
-  "work": [
-    {
-        "company": "Flux Factory, Inc.",
-        "website": "https://flux.io",
-        "positions": [
-            {
-                "title": "Technical Product Manager",
-            "startDate": "2015-05-01",
-            "endDate": "2016-08-17",
-            "summary": "",
-            "highlights": [
-            ]
-            },
-            {
-                "title": "Software Engineer",
-            "startDate": "2013-07-01",
-            "endDate": "2015-05-01",
-            "summary": "",
-            "highlights": [
-            ]
-            }
+    "work": [
+        {
+            "company": "Flux Factory, Inc.",
+            "website": "https://flux.io",
+            "positions": [
+                {
+                    "title": "Technical Product Manager",
+                    "startDate": "2015-05-01",
+                    "endDate": "2016-08-17",
+                    "highlights": [
+                        "Led the company through a 4 month pivot to a new SASS data-interchange product for computational designers, from roadmapping to launch.",
+                        "Worked with company leadership to develop KPIs and product roadmap, coordinating development teams to implement features.",
+                        "Reviewed product analytics to understand user behavior, helping prioritize new features and supporting product sales and marketing."
+                    ]
+                },
+                {
+                    "title": "Software Engineer",
+                    "startDate": "2013-07-01",
+                    "endDate": "2015-05-01",
+                    "highlights": [
+                        "Designed and implemented backend services in Go and associated SQL databases for creating and managing user accounts, projects and Stripe payments.",
+                        "Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the [Metro](https://metro.flux.io/metro/) product.",
+                        "Implemented logical subsystems for a 'building configurator', while helping re-scope project to deliver a smaller set of features on time."
+                    ]
+                }
             ]
         },
-    {
-        "company": "MIT CSAIL, ALFA Group",
-        "website": "https://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/index.php",
-        "summary": "this is a summary",
-        "positions": [
-            {
-                "title": "Research Assistant",
-            "startDate": "2012-06-01",
-            "endDate": "2013-05-31",
-            "highlights": [
-                "Developed FlexGP – a distributed, heterogeneous genetic programming system for machine learning.",
-                "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation."
+        {
+            "company": "MIT CSAIL, ALFA Group",
+            "website": "https://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/index.php",
+            "positions": [
+                {
+                    "title": "Research Assistant",
+                    "startDate": "2012-06-01",
+                    "endDate": "2013-05-31",
+                    "highlights": [
+                        "Developed [FlexGP](http://hdl.handle.net/1721.1/85216) – a distributed, heterogeneous genetic programming system for machine learning.",
+                        "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation."
+                    ]
+                },
+                {
+                    "title": "Undergraduate Research Assistant",
+                    "startDate": "2011-02-01",
+                    "endDate": "2011-05-31",
+                    "highlights": [
+                        "Designed and implemented a simple, light-weight genetic programming library in Java."
+                    ]
+                }
             ]
-            },
-            {
-                "title": "Undergraduate Research Assistant",
-            "startDate": "2011-02-01",
-            "endDate": "2011-05-31",
-            "highlights": [
-                "Designed and implemented a simple, light-weight genetic programming library in Java."
+        },
+        {
+            "company": "Jaybridge Robotics, Autonomous Agriculture Group",
+            "website": "http://www.jaybridge.com/",
+            "positions": [
+                {
+                    "title": "Software Engineering Intern",
+                    "startDate": "2011-05-01",
+                    "endDate": "2011-08-31",
+                    "highlights": [
+                        "Contributed to ongoing development of software control package for an autonomous farm tractor.",
+                        "Expanded regression tests to exercise new system features and to assess improvements in system performance."
+                    ]
+                }
             ]
-            }
+        },
+        {
+            "company": "Mission Critical Technologies, Machine Learning and Controls Lab",
+            "positions": [
+                {
+                    "title": "MCT Intern at NASA Ames Research Center",
+                    "startDate": "2010-05-01",
+                    "endDate": "2010-08-31",
+                    "highlights": [
+                        "Expanded control software on lab test bed to incorporate acceleration measurements.",
+                        "Implemented a simple fault detection and isolation algorithm to demonstrate system capabilities."
+                    ]
+                }
             ]
-    }
+        },
+        {
+            "company": "iRobot Corporation, iRobot 710 Warrior",
+            "positions": [
+                {
+                    "title": "Software Engineering Intern",
+                    "startDate": "2009-06-01",
+                    "endDate": "2009-08-31",
+                    "highlights": [
+                        "Programmed a component to setup streams with onboard A/V driver for remote control over radio.",
+                        "Designed and tested a logging application for real-time viewing and debugging of runtime data."
+                    ]
+                }
+            ]
+        }
 
-  ],
-  "_volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-        "institution": "Massachusetts Institute of Technology",
-        "degrees": [
-            {
-                "area": "Computer Science",
-                "studyType": "Masters of Engineering",
-                "endDate": "2013-06-01",
-                "gpa": "5.0"
-            },
-            {
-                "area": "Computer Science and Engineering",
-                "studyType": "Bachelors of Science",
-                "endDate": "2012-06-01",
-                "gpa": "4.7"
-            }
-        ],
-        "courses": ["Machine Learning", "Distributed Systems",
-                    "Computer Systems Security",
-                    "Performance Engineering of Software Systems",
-                    "Design and Analysis of Algorithms"]
-    }
-  ],
-  "_awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-        "name": "FlexGP: Cloud-Based Ensemble Learning with Genetic Programming for Large Regression Problems",
-        "publication": "Journal of Grid Computing",
-      "publisher": "Springer Netherlands",
-      "releaseDate": "2015",
-      "website": "https://dspace.mit.edu/handle/1721.1/103516",
-      "summary": "Describes FlexGP, the first Genetic Programming system to perform symbolic regression on large-scale datasets on the cloud via massive data-parallel ensemble learning."
-    },
-    {
-        "name": "Learning Regression Ensembles with Genetic Programming at Scale",
-        "publication": "Proceedings of GECCO",
-      "publisher": "ACM",
-      "releaseDate": "2013",
-      "website": "http://doi.acm.org/10.1145/2463372.2463506",
-      "summary": "Examines the challenge of producing ensembles of regression models for large datasets."
-    },
-    {
-      "name": "Cloud Driven Design of a Distributed Genetic Programming Platform",
-      "publication": "Proceedings of EvoApplications",
-      "publisher": "Springer Berlin Heidelberg",
-      "releaseDate": "2013",
-      "website": "http://dx.doi.org/10.1007/978-3-642-37192-9_51",
-      "summary": "Presents FlexGP, a distributed genetic programming (GP) system designed to efficiently run on the cloud."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Programming Languages",
-        "keywords": ["Python", "JavaScript", "Go", "HTML/CSS", "Java", "C/C++"]
-    },
-    {
-      "name": "Software & Tools",
-        "keywords": ["git", "svn", "Jira", "Mixpanel/GA", "QGIS"]
-    },
-    {
-      "name": "Deployment & DBs",
-        "keywords": ["GCS", "AWS", "Docker", "MySQL", "MongoDB"]
-    }
-  ],
-  "_languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-      "interests": ["Board Games", "Ping Pong", "Cooking",
-                    "Exploring new cities", "Robotics", "Soccer" ],
-  "_references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
+    ],
+    "_volunteer": [
+        {
+            "organization": "CoderDojo",
+            "position": "Teacher",
+            "website": "http://coderdojo.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Global movement of free coding clubs for young people.",
+            "highlights": [
+                "Awarded 'Teacher of the Month'"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Massachusetts Institute of Technology",
+            "degrees": [
+                {
+                    "area": "Computer Science",
+                    "studyType": "Masters of Engineering",
+                    "endDate": "2013-06-01",
+                    "gpa": "5.0"
+                },
+                {
+                    "area": "Computer Science and Engineering",
+                    "studyType": "Bachelors of Science",
+                    "endDate": "2012-06-01",
+                    "gpa": "4.7"
+                }
+            ],
+            "courses": ["Machine Learning", "Distributed Systems",
+                        "Computer Systems Security",
+                        "Performance Engineering of Software Systems",
+                        "Design and Analysis of Algorithms"]
+        }
+    ],
+    "_awards": [
+        {
+            "title": "Digital Compression Pioneer Award",
+            "date": "2014-11-01",
+            "awarder": "Techcrunch",
+            "summary": "There is no spoon."
+        }
+    ],
+    "publications": [
+        {
+            "name": "FlexGP: Cloud-Based Ensemble Learning with Genetic Programming for Large Regression Problems",
+            "publication": "Journal of Grid Computing",
+            "publisher": "Springer Netherlands",
+            "releaseDate": "2015",
+            "website": "https://dspace.mit.edu/handle/1721.1/103516",
+            "summary": "Describes FlexGP, the first Genetic Programming system to perform symbolic regression on large-scale datasets on the cloud via massive data-parallel ensemble learning."
+        },
+        {
+            "name": "Learning Regression Ensembles with Genetic Programming at Scale",
+            "publication": "Proceedings of GECCO",
+            "publisher": "ACM",
+            "releaseDate": "2013",
+            "website": "http://doi.acm.org/10.1145/2463372.2463506",
+            "summary": "Examines the challenge of producing ensembles of regression models for large datasets."
+        },
+        {
+            "name": "Cloud Driven Design of a Distributed Genetic Programming Platform",
+            "publication": "Proceedings of EvoApplications",
+            "publisher": "Springer Berlin Heidelberg",
+            "releaseDate": "2013",
+            "website": "http://dx.doi.org/10.1007/978-3-642-37192-9_51",
+            "summary": "Presents FlexGP, a distributed genetic programming (GP) system designed to efficiently run on the cloud."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming Languages",
+            "keywords": ["Python", "JavaScript", "Go", "HTML/CSS", "Java", "C/C++"]
+        },
+        {
+            "name": "Software & Tools",
+            "keywords": ["git", "svn", "Jira", "gerrit", "Mixpanel/GA", "QGIS"]
+        },
+        {
+            "name": "Deployment & DBs",
+            "keywords": ["GCS", "AWS", "Docker", "MySQL", "MongoDB"]
+        }
+    ],
+    "_languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": ["Board Games", "Ping Pong", "Cooking",
+                  "Exploring new cities", "Robotics", "Soccer" ],
+    "_references": [
+        {
+            "name": "Erlich Bachman",
+            "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+        }
+    ]
 }
