@@ -1,0 +1,177 @@
+{
+  "basics": {
+    "name": "Owen C. Derby",
+    "label": "Programmer",
+    "picture": "",
+    "email": "",
+    "phone": "",
+    "website": "https://owenderby.com",
+    "summary": "Summary of Owen goes here",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "ocderby",
+        "url": "https://twitter.com/ocderby"
+      },
+      {
+        "network": "GitHub",
+        "username": "oderby",
+        "url": "https://github.com/oderby"
+      }
+    ]
+  },
+  "work": [
+    {
+        "company": "Flux Factory, Inc.",
+        "website": "https://flux.io",
+        "positions": [
+            {
+                "title": "Technical Product Manager",
+            "startDate": "2015-05-01",
+            "endDate": "2016-08-17",
+            "summary": "",
+            "highlights": [
+            ]
+            },
+            {
+                "title": "Software Engineer",
+            "startDate": "2013-07-01",
+            "endDate": "2015-05-01",
+            "summary": "",
+            "highlights": [
+            ]
+            }
+            ]
+        },
+    {
+        "company": "MIT CSAIL, ALFA Group",
+        "website": "https://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/index.php",
+        "summary": "this is a summary",
+        "positions": [
+            {
+                "title": "Research Assistant",
+            "startDate": "2012-06-01",
+            "endDate": "2013-05-31",
+            "highlights": [
+                "Developed FlexGP – a distributed, heterogeneous genetic programming system for machine learning.",
+                "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation."
+            ]
+            },
+            {
+                "title": "Undergraduate Research Assistant",
+            "startDate": "2011-02-01",
+            "endDate": "2011-05-31",
+            "highlights": [
+                "Designed and implemented a simple, light-weight genetic programming library in Java."
+            ]
+            }
+            ]
+    }
+
+  ],
+  "_volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "website": "http://coderdojo.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": [
+        "Awarded 'Teacher of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+        "institution": "Massachusetts Institute of Technology",
+        "degrees": [
+            {
+                "area": "Computer Science",
+                "studyType": "Masters of Engineering",
+                "endDate": "2013-06-01",
+                "gpa": "5.0"
+            },
+            {
+                "area": "Computer Science and Engineering",
+                "studyType": "Bachelors of Science",
+                "endDate": "2012-06-01",
+                "gpa": "4.7"
+            }
+        ],
+        "courses": ["Machine Learning", "Distributed Systems",
+                    "Computer Systems Security",
+                    "Performance Engineering of Software Systems",
+                    "Design and Analysis of Algorithms"]
+    }
+  ],
+  "_awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+        "name": "FlexGP: Cloud-Based Ensemble Learning with Genetic Programming for Large Regression Problems",
+        "publication": "Journal of Grid Computing",
+      "publisher": "Springer Netherlands",
+      "releaseDate": "2015",
+      "website": "https://dspace.mit.edu/handle/1721.1/103516",
+      "summary": "Describes FlexGP, the first Genetic Programming system to perform symbolic regression on large-scale datasets on the cloud via massive data-parallel ensemble learning."
+    },
+    {
+        "name": "Learning Regression Ensembles with Genetic Programming at Scale",
+        "publication": "Proceedings of GECCO",
+      "publisher": "ACM",
+      "releaseDate": "2013",
+      "website": "http://doi.acm.org/10.1145/2463372.2463506",
+      "summary": "Examines the challenge of producing ensembles of regression models for large datasets."
+    },
+    {
+      "name": "Cloud Driven Design of a Distributed Genetic Programming Platform",
+      "publication": "Proceedings of EvoApplications",
+      "publisher": "Springer Berlin Heidelberg",
+      "releaseDate": "2013",
+      "website": "http://dx.doi.org/10.1007/978-3-642-37192-9_51",
+      "summary": "Presents FlexGP, a distributed genetic programming (GP) system designed to efficiently run on the cloud."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+        "keywords": ["Python", "JavaScript", "Go", "HTML/CSS", "Java", "C/C++"]
+    },
+    {
+      "name": "Software & Tools",
+        "keywords": ["git", "svn", "Jira", "Mixpanel/GA", "QGIS"]
+    },
+    {
+      "name": "Deployment & DBs",
+        "keywords": ["GCS", "AWS", "Docker", "MySQL", "MongoDB"]
+    }
+  ],
+  "_languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+      "interests": ["Board Games", "Ping Pong", "Cooking",
+                    "Exploring new cities", "Robotics", "Soccer" ],
+  "_references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ]
+}

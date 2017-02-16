@@ -1,0 +1,93 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      <!-- Header -->
+      {{ partial "header" . }}
+      <div class="container resume">
+        <section>
+          <header>Education</header>
+          <hr />
+          <div class="resume-section">
+          {{ range .Site.Data.resume.education }}
+            <h3>{{ .institution }}</h3>
+            {{ range .degrees }}
+            <div class="row">
+              <div class="col-xs-9"><h4>{{ .studyType }} in {{ .area }}</h4><!--; GPA: {{ .gpa }}!--></div>
+              <div class="col-xs-3 right">{{ dateFormat "January 2006" .endDate }}</div>
+            </div>
+            {{ end }}
+            <br />
+            <div>
+              <p><strong>Relevant Coursework: </strong>
+                {{ delimit .courses ", " }}
+              </p>
+            </div>
+          </div>
+          {{ end }}
+        </section>
+        <section>
+          <header>Experience</header>
+          <hr />
+          <div class="resume-section">
+          {{ range .Site.Data.resume.work }}
+            <div class="resume-subsection">
+              <h3><a href="{{ .website }}">{{ .company }}</a></h3>
+              {{ with .summary }}<span>{{ . }}</span>{{ end }}
+              {{ range .positions }}
+                <div class="row">
+                  <div class="col-xs-9"><h4>{{ .title }}</h4></div>
+                  <div class="col-xs-3 right">{{ dateFormat "January 2006" .startDate }} — {{ dateFormat "January 2006" .endDate }}</div>
+                </div>
+                {{ with .highlights }}
+                  <div>
+                    <ul>
+                      {{ range . }}
+                        <li>{{ . }}</li>
+                      {{ end }}
+                    </ul>
+                  </div>
+                {{ end }}
+              {{ end }}
+            </div>
+          {{ end }}
+          </div>
+        </section>
+        <section>
+          <header>Professional Skills</header>
+          <hr />
+          <div class="resume-section">
+          {{ range .Site.Data.resume.skills }}
+          <div>
+            <p><strong>{{ .name }}: </strong>{{ delimit .keywords ", " }}</p>
+          </div>
+          {{ end }}
+          </div>
+        </section>
+        <section>
+          <header>Hobbies</header>
+          <hr />
+          <ul class="multi-column">
+            {{ range .Site.Data.resume.interests }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </section>
+        <section>
+          <header>Publications</header>
+          <hr />
+          <div class="resume-section">
+          {{ range .Site.Data.resume.publications }}
+            <div class="resume-subsection">
+            <h3 class="inline"><a href="{{ .website }}">{{ .name }}</a></h3>
+            <h4 class="inline">in {{ .publication }} {{ .releaseDate }}</h4>
+            <br>
+            <span>{{ .summary }}<span>
+            </div>
+          {{ end }}
+          </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    {{ partial "footer" . }}
+  </body>
+</html>
