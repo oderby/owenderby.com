@@ -9,24 +9,29 @@
             <div class="panel-body">
               {{ range .Data.Pages.ByPublishDate }}
               <div class="row">
-                <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
-                  <h5 style="text-align: right">
-                    {{ .Date.Format "Jan 2" }}
+                <div class="col-xs-2 col-sm-2">
+                  <h5>
+                    {{ .Date.Format "1/2/06" }}
                   </h5>
                  </div>
-                 <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
-                   <h5 style="text-align: left">
+                 <div class="col-xs-10 col-sm-8">
+                   <h5>
                      <strong><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}  {{ if .GetParam "draft"}}DRAFT{{end}} </a></strong>
                    </h5>
                  </div>
-                 <div class="hidden-xs col-sm-6 col-md-7 col-lg-7">
-                   <h5 style="text-align: left">
-                     {{ .Summary | markdownify }}
-                     {{ if .Truncated }}
-                     <a href="{{ .RelPermalink }}">Read More…</a>
-                     {{ end }}
-                   </h5>
+                 <div class="hidden-xs col-sm-2">
+                   <h5 style="text-align: right">{{ .ReadingTime }} mins</h5>
                  </div>
+              </div>
+                <div class="hidden-xs col-sm-offset-2">
+                  <div class="box">
+                    <h5>
+                      {{ .Summary | markdownify }}
+                      {{ if .Truncated }}
+                      <a href="{{ .RelPermalink }}">Read More…</a>
+                      {{ end }}
+                    </h5>
+                  </div>
               </div>
             {{ end }}
             </div>
