@@ -5,10 +5,59 @@ date = "2017-02-03T21:28:52-08:00"
 categories = [
 ]
 title = "Exploration of 2016 Presidential Election Results in Pennsylvania"
+foo = "An examination of 2016 Election Results in Pennsylvania"
 description = ""
 slug = "election_2016_pa_results"
 draft = "true"
 +++
+This past election has been on my mind a lot lately. When it comes to society
+and politics, I've learned that the issues are often complex and obfuscated. We
+can only find clarity by digging deeper and elucidating the nuances of the
+issues. Unlike legislation and policy, election results are far more objective,
+lending themselves to analysis. And so, shortly after the election, I dove into
+the data to seek clarity about the dynamics of this election.
+
+I decided to start with Pennsylvania state, as a smaller, more tractable case
+study. I examined registration and results data for this and previous
+elections. My analysis has yielded two general insights about this
+election. First, this election is remarkable, not because Trump won, but because
+of how he won. Second, that a Republican won Pennsylvania this year is only
+remarkable when compared to Obama's win in 2008.
+
+Trump's win in Pennsylvania is certainly remarkable. It is the first time a
+Republican candidate won the state in 28 years. Moreover, while the race with
+his opponent (Clinton) was close, he outperformed the previous Republican
+candidate (Romney) by a wider margin than Obama did over his predecessor (Kerry)
+in 2008. That is, **Trump swung more votes in 2016 than Obama did in 2008**.
+
+Which brings me to my second point. 2008 was itself a remarkable election, no
+doubt. And when we compare 2016 to 2008, the differences seem stunning. Yet,
+when we step back and put things into the context of the surrounding elections,
+we see that **2008 was the anomaly, not 2016**. In fact, Republican candidates
+have been steadily gaining ground in Pennsylvania since 1996 (the earliest I was
+able to get data for). 2008 is the only year where that trend was reversed and
+Obama gained tremendous ground while the Republicans lost so much. However, in
+2012 Obama lost much of that ground and the Republicans were back on track.
+
+In this post, I examine the election data in detail to illustrate these points
+and try to explain
+
+
+<!---
+I'm an engineer. As an engineer, I like it when things are clear and logical. In
+fact, I consider it part of my job to make things as clear as possible.
+
+> Trump won the election, but Clinton won the popular vote.
+
+The above fact is anything but clear and logical, and yet it's
+indisputable. How? What happened?
+
+In my quest to answer these questions, I came across another, lesser known, but
+equally confounding fact.
+
+> In Pennsylvania, Trump won his counties by larger margins than Obama did in
+> 2008.
+!--->
 
 Since the election, I've spent the past few months exploring the results of the
 2016 US Presidential Election in Pennsylvania, one of the "surprising" states to
@@ -660,3 +709,7 @@ states. Maybe someday.
 
 [^6]: As mentioned before, 1996 is missing when we consider registration data
     because I couldn't find it at the county level.
+
+[^7]: It's not, due to the way the electoral college works in America. I suspect
+    the general population's understanding of the electoral college spiked
+    during and after the election this year.
