@@ -24,7 +24,7 @@
             <div class="resume-subsection">
               <h3>
                 {{ if isset . "website" }}
-                <a href="{{ .website }}">{{ .company }}</a>
+                <a href="{{ .website }}" target="blank">{{ .company }}</a>
                 {{ else }}
                 {{ .company }}
                 {{ end }}
@@ -33,7 +33,7 @@
               {{ range .positions }}
                 <div class="row">
                   <div class="col-xs-7"><h4>{{ .title }}</h4></div>
-                  <div class="col-xs-5 right">{{ dateFormat "January 2006" .startDate }} — {{ dateFormat "January 2006" .endDate }}</div>
+                  <div class="col-xs-5 right">{{ dateFormat "Jan 2006" .startDate }} — {{ dateFormat "Jan 2006" .endDate }}</div>
                 </div>
                 {{ with .highlights }}
                   <div>
@@ -96,7 +96,7 @@
           <div class="resume-section">
           {{ range .Site.Data.resume.publications }}
             <div class="resume-subsection">
-            <h3 class="inline"><a href="{{ .website }}">{{ .name }}</a></h3>
+            <h3 class="inline"><a href="{{ .website }}" target="blank">{{ .name }}</a></h3>
             <h4 class="inline">in {{ .publication }} {{ .releaseDate }}</h4>
             <br>
             <span>{{ .summary }}<span>

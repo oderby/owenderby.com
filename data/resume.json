@@ -2,7 +2,7 @@
     "basics": {
         "name": "Owen C. Derby",
         "website": "https://owenderby.com",
-        "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building a new sub-system, I'm adept at jumping into a variety of different projects and producing results. If you like to classify people, I'm somewhere between a 'full-stack' and 'generalist' developer, although I've also had experience as a project manager. Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling and taking photos, playing any variety of game with friends (so long as it involves more thinking than randomness). I'm also a ping-pong enthusiast, and have been known join in the occasional pick-up basketball and soccer games. Currently, I'm contributing actively to the [5calls](5calls.org) project and finding ways to empower my peers to be better citizens."
+        "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building a new sub-system, I'm adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I'm also a ping-pong enthusiast, and have been known join in the occasional pick-up basketball or soccer game. Currently, I'm contributing actively to the [5calls](https://5calls.org) project and finding ways to empower my peers to be better citizens."
     },
     "work": [
         {
@@ -14,9 +14,9 @@
                     "startDate": "2015-05-01",
                     "endDate": "2016-08-17",
                     "highlights": [
-                        "Led the company through a 4 month pivot to a new SASS data-interchange product for computational designers, from roadmapping to launch.",
-                        "Worked with company leadership to develop KPIs and product roadmap, coordinating development teams to implement features.",
-                        "Reviewed product analytics to understand user behavior, helping prioritize new features and supporting product sales and marketing."
+                        "Led the company through a 4 month pivot to a new SASS data-interchange product for computational designers.",
+                        "Established KPIs for the product, a roadmap to achieve them and oversaw its implementation by development teams.",
+                        "Analyzed user behavior to prioritize new features and support sales and marketing in targeting customers."
                     ]
                 },
                 {
@@ -24,9 +24,9 @@
                     "startDate": "2013-07-01",
                     "endDate": "2015-05-01",
                     "highlights": [
-                        "Designed and implemented backend services in Go and associated SQL databases for creating and managing user accounts, projects and Stripe payments.",
+                        "Designed and built backend services in Go and associated SQL databases for user accounts, data and Stripe payments.",
                         "Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the [Metro](https://metro.flux.io/metro/) product.",
-                        "Implemented logical subsystems for a 'building configurator', while helping re-scope project to deliver a smaller set of features on time."
+                        "Implemented logical subsystems for a 'building configurator', while helping re-scope the project to deliver a smaller set of features on time."
                     ]
                 }
             ]
