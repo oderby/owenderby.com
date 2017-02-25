@@ -4,10 +4,16 @@
       {{ partial "header" . }}
       <section id="about">
         <div class="container">
+        <h3>Hi! My name is</h3>
         <div class="avatar">
           <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
         </div>
-        <h3>Page is under construction! Check back soon.</h3>
+        <h3><strong>{{ .Site.Params.author }}</strong></h3>
+        <h3>I'm a developer and you've found my personal website.</h3>
+        <h3>Here you can find my <a href="/projects/">projects</a>,</h3>
+        <h3>my musings and rants as <a href="/blog/">blog posts</a>,</h3>
+        <h3>my professional life history (aka resume),</h3>
+        <h3>and, maybe someday, some pretty pictures I've taken.</h3>
         {{ partial "social.html" . }}
         </div>
       </section>
