@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="My personal soap box.">
+    <link rel="shortcut icon" type="image/x-icon" href="https://owenderby.com/img/favicon.ico">
+    <title>Making Panoramas</title>
+    <meta name="generator" content="Hugo 0.17" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <link rel="stylesheet" type="text/css" href="https://owenderby.com/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://owenderby.com/css/extras.css" />
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-38535701-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://owenderby.com/"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/resume/">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="https://owenderby.com/blog/panoramas/">Making Panoramas</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          February 7, 2017
+            &nbsp;&nbsp;
+            
+            <span class="label label-success">programming</span>
+            
+            <span class="label label-success">photography</span>
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+<p>I recently finished up a month of travel. In addition to seeing great friends
+and beautiful places, I used my travels as an opportunity to learn how to use a
+DSLR. I mean <em>really learn</em>, beyond just the point-and-shoot basics we all
+know. So I borrowed an old Nikon D40 from a friend and sort of just dove
+in. Turns out, it&rsquo;s not very difficult to go from n00b to novice, and it&rsquo;s even
+easier to take a lot of photos&hellip;but that&rsquo;s a story for another day.</p>
+
+<figure >
+    <a href="/img/panos/pano_sample.jpg">
+      <img src="/img/panos/pano_sample.jpg" width="100%"/>
+    </a>
+    
+    <figcaption>
+      
+      <p>
+        <p>A lovely creek in Boise National
+Forest.</p>
+
+      </p>
+      
+    </figcaption>
+    
+</figure>
+
+
+<p>One of the challenges I (unwittingly) set for myself was creating panoramas,
+like the one above. It seems straightforward in theory - shoot a series of
+overlapping photos and then combine them using software. Afterall, most modern
+smart phones have panorama modes built into their camera apps. However, as I
+soon learned, it can very easily turn into a deep, interesting <del>trap</del> rabbit
+hole of techniques and details.</p>
+
+<p>This post is a summary of my findings from figuring out how to create panoramas
+from individual photos, and then uploading them to Facebook as &ldquo;Photo
+Spheres&rdquo;<sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">1</a></sup>. This wasn&rsquo;t as simple as I expected it to be, so I wanted to
+record my insights and process, for my future self and anyone else who is silly
+enough to try for themselves.</p>
+
+<p>One last aside - I work predominantly on Ubuntu with FOSS, so this is written
+using entirely open source tools. This is definitely possible using Photoshop
+(heck, it&rsquo;s probably much easier), but YMMV.</p>
+
+<h2 id="making-the-panorama">Making the Panorama</h2>
+
+<p>There&rsquo;s effectively two components to my process:</p>
+
+<ol type="A">
+<li>Produce the raw panorama by stitching together a series of pictures.</li>
+<li>Set the panorama to have the correct field of view (FOV) and image size and
+   then add appropriate metadata so it's recognized as a Photo Sphere.</li>
+</ol>
+
+<p>This section focuses on part A.</p>
+
+<h3 id="taking-the-photos">Taking the Photos</h3>
+
+<div class='row'>
+    <div class='col-xs-6 col-sm-3'>
+        <figure >
+    <a href="/img/panos/a.JPG">
+      <img src="/img/panos/a.JPG" width="100%"/>
+    </a>
+    
+</figure>
+
+    </div>
+    <div class='col-xs-6 col-sm-3'>
+        <figure >
+    <a href="/img/panos/b.JPG">
+      <img src="/img/panos/b.JPG" width="100%"/>
+    </a>
+    
+</figure>
+
+    </div>
+    <div class='col-xs-6 col-sm-3'>
+        <figure >
+    <a href="/img/panos/c.JPG">
+      <img src="/img/panos/c.JPG" width="100%"/>
+    </a>
+    
+</figure>
+
+    </div>
+    <div class='col-xs-6 col-sm-3'>
+        <figure >
+    <a href="/img/panos/d.JPG">
+      <img src="/img/panos/d.JPG" width="100%"/>
+    </a>
+    
+</figure>
+
+    </div>
+</div>
+<div class='caption'>
+    <p></p>
+    <p>4 individuals photos.</p>
+</div>
+
+<p>Since I was just starting out with a borrowed camera, I wasn&rsquo;t very
+sophisticated in my setup for taking the panorama shots. I shot hand-held, and
+used the horizon as my reference as I swept my camera across the scene, taking
+pictures periodically. Of course, there are
+some <a href="http://wiki.panotools.org/Heads" target="_blank">very fancy rigs</a> out there to buy for
+your tripod, and there are even some clever techniques for better hand-held
+shots (google &ldquo;philopod&rdquo; if you&rsquo;re curious).</p>
+
+<p>Nevertheless, I found I was able to produce decent panoramas, once I learned how
+to keep the exposure and white balance the same in every picture.</p>
+
+<blockquote>
+<p><strong><em>ProTip #1</em></strong> – Consider using
+the <a href="https://photographylife.com/nikon-ae-l-af-l-button" target="_blank">AutoExposure-Lock</a>
+feature of your camera when taking a photo series for a panorama. It makes the
+resulting panorama look more natural and contiguous, at the cost of some
+places potentially being under- or over-exposed.</p>
+</blockquote>
+
+<p>I didn&rsquo;t have many problems with parallax, since I was taking mostly wide-angle
+landscape panoramas. But I now know that I can reduce parallax effects by
+rotating the camera about
+its <a href="http://wiki.panotools.org/No-parallax_point" target="_blank">&ldquo;no-parallax point&rdquo;</a>.</p>
+
+<h3 id="stitching-the-photos">Stitching the Photos</h3>
+
+<p>For stitching, the best open source tool I found<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">2</a></sup>
+is <a href="http://hugin.sourceforge.net/" target="_blank">Hugin</a>. Hugin is actually a front end GUI for
+the <a href="http://wiki.panotools.org/Panorama_tools" target="_blank">Panorama Tools</a>.</p>
+
+<p>Now, Hugin is an amazing tool and can be used to do a tremendous amount of
+things. And so, here is where the hole really starts. Between trying to figure
+out how to use the tool and being distracted by learning what people do with the
+tool, I spent way too long here. And every time I revisit this, I seem to lose
+more time<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">3</a></sup>. But, even I have limits to how deep down the rabbit hole I&rsquo;ll
+go. So, here I&rsquo;ll be focusing on the practical findings, and leaving some
+questions unanswered&hellip;because&hellip;I just need to move on 😵</p>
+
+<p>So, without further adieu, here&rsquo;s the CliffsNotes<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup> for creating panoramas in
+Hugin:</p>
+
+<ol>
+<li>Load you photo series.</li>
+<li>Switch to &lsquo;Advanced&rsquo; interface.</li>
+<li>On the &lsquo;Photos&rsquo; tab:
+
+<ol>
+<li>Select &lsquo;Hugin\&rsquo;s CPFind + Celeste&rsquo; option for Feature Matching. Press
+&lsquo;Create control points&rsquo; button.</li>
+<li>Select &lsquo;Positions, View and Barrel&rsquo; for Geometric.</li>
+<li>Run the optimizer (Edit &gt; Optimize)</li>
+</ol></li>
+<li>Switch back to &lsquo;Simple&rsquo; interface.</li>
+<li>Go to &lsquo;Preview&rsquo; tab and review panorama. You&rsquo;re looking for a few things:
+
+<ol>
+<li>Are there any redundant photos? (e.g. photos arranged [1][2][3] such
+that 1 and 3 have enough overlap that 2 isn&rsquo;t needed).</li>
+<li>Are there any moving objects (cars, people) in the image? If so, consider
+using a <a href="http://wiki.panotools.org/Hugin_Mask_tab" target="_blank">mask</a> to hide it.</li>
+<li>Does the panorama look good (well aligned and not distorted)? If not, you
+may need to manually
+add/remove
+<a href="http://wiki.panotools.org/Hugin_Control_Points_tab" target="_blank">control points</a>.</li>
+</ol></li>
+<li>Go to the &lsquo;Projection&rsquo; tab and press the &lsquo;Fit&rsquo; button. You may want to try
+different projections to see if any work better. For wide-angle panoramas of
+nature, &lsquo;cylindrical&rsquo; seems best.</li>
+<li>Go to the &lsquo;Move/Drag&rsquo; tab and press &lsquo;Straighten&rsquo; button. This should make a
+very subtle change to the panorama - if instead it turns your panorama into
+an &rsquo;S&rsquo;, Hugin probably has your lens information or focal length wrong<sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup>.</li>
+</ol>
+
+<figure >
+    <a href="/img/panos/int_pano_hugin.jpg">
+      <img src="/img/panos/int_pano_hugin.jpg" width="100%"/>
+    </a>
+    
+    <figcaption>
+      
+      <p>
+        Panorama so far.
+      </p>
+      
+    </figcaption>
+    
+</figure>
+
+
+<p>Okay, so now you have a choice, depending on what sort of panorama you want to
+produce. Typically, you&rsquo;ll want to produce a Photo Sphere, which is a much
+cooler way to show off your panorama. In that case, proceed to the
+next <a href="#make-sphere" target="_blank">section</a> now.</p>
+
+<p>However, sometimes you just want a flat, cropped panorama. I typically opt for
+this when the estimated horizontal FOV<sup class="footnote-ref" id="fnref:8"><a rel="footnote" href="#fn:8">6</a></sup> is ≤160° or I&rsquo;m just stitching
+together a couple photos (not really a panorama). To do this, we continue from
+above:</p>
+
+<ol>
+<li>Switch to &lsquo;Advanced&rsquo; interface.</li>
+<li>Go to &lsquo;Stitcher&rsquo; tab and&hellip;
+
+<ol>
+<li>Press &lsquo;Calculate Optimal Size&rsquo;</li>
+<li>Press &lsquo;Fit Crop to Images&rsquo;</li>
+<li>Ensure &lsquo;Exposure corrected, low dynamic range&rsquo; is the only option selected.</li>
+<li>Change the format to &lsquo;JPEG&rsquo;</li>
+<li>Press &lsquo;Stitch!&rsquo; button and choose place to save hugin project file, then
+name and place to save resulting panorama.</li>
+</ol></li>
+</ol>
+
+<figure >
+    <a href="/img/panos/flat_pano.jpg">
+      <img src="/img/panos/flat_pano.jpg" width="100%"/>
+    </a>
+    
+    <figcaption>
+      
+      <p>
+        Finished flat panorama.
+      </p>
+      
+    </figcaption>
+    
+</figure>
+
+
+<p>That&rsquo;s it - you should have a nice, clear panorama to post as you like!</p>
+
+<h2 id="make-sphere">Making a Photo Sphere<sup class="footnote-ref" id="fnref:12"><a rel="footnote" href="#fn:12">7</a></sup></h2>
+
+<p>Instead, you might want to post your panorama as a Photo Sphere. To do so, you
+just need to massage it into a size and shape that Facebook will accept and
+recognize as a 360° image<sup class="footnote-ref" id="fnref:9"><a rel="footnote" href="#fn:9">8</a></sup>.</p>
+
+<h3 id="image-shape">Image Shape</h3>
+
+<p>First, you need to make your panorama fit into one of seven predefined sizes
+(determined by horizontal and vertical FOV):</p>
+
+<ol>
+<li><p>Go back to the &lsquo;Projection&rsquo; tab and note the estimated horizontal and
+vertical FOV values. Then find the row in the following table that best
+matches those values. Enter the FOV values from the table into Hugin. The
+Image Size and Command you&rsquo;ll use next.</p>
+
+<table>
+<thead>
+<tr>
+<th>H FOV</th>
+<th>V FOV</th>
+<th>Image Size (px)</th>
+<th>Command</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>120°</td>
+<td>86°</td>
+<td>6000x5343</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=18000 -FullPanoHeightPixels=9000 -CroppedAreaLeftPixels=6000 -CroppedAreaTopPixels=2350 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=4300 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+
+<tr>
+<td>150°</td>
+<td>86°</td>
+<td>6000x4274</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=14400 -FullPanoHeightPixels=7200 -CroppedAreaLeftPixels=4200 -CroppedAreaTopPixels=1880 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=3440 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+
+<tr>
+<td>180°</td>
+<td>86°</td>
+<td>6000x3562</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=12000 -FullPanoHeightPixels=6000 -CroppedAreaLeftPixels=3000 -CroppedAreaTopPixels=1567 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=2867 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+
+<tr>
+<td>240°</td>
+<td>86°</td>
+<td>6000x2671</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=9000 -FullPanoHeightPixels=4500 -CroppedAreaLeftPixels=1500 -CroppedAreaTopPixels=1175 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=2150 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+
+<tr>
+<td>300°</td>
+<td>86°</td>
+<td>6000x2137</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=7200 -FullPanoHeightPixels=3600 -CroppedAreaLeftPixels=600 -CroppedAreaTopPixels=940 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=1720 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+
+<tr>
+<td>360°</td>
+<td>86°</td>
+<td>6000x1781</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=6000 -FullPanoHeightPixels=3000 -CroppedAreaLeftPixels=0 -CroppedAreaTopPixels=783 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=1433 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+
+<tr>
+<td>360°</td>
+<td>65°</td>
+<td>6000x1217</td>
+<td><input type="text" class="form-control input-sm" value="exiftool -overwrite_original -FullPanoWidthPixels=6000 -FullPanoHeightPixels=3000 -CroppedAreaLeftPixels=0 -CroppedAreaTopPixels=958 -CroppedAreaImageWidthPixels=6000 -CroppedAreaImageHeightPixels=1083 -ProjectionType=cylindrical path/to/image.jpg" readonly="" onclick="this.select()">
+</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>Go to the &lsquo;Crop&rsquo; tab and click on the button next to the crop dimensions to
+&lsquo;reset crop to maximal possible area&rsquo;. The result should be your panorama
+embedded in an overall image which covers the desired FOV.</p></li>
+
+<li><p>Switch back to &lsquo;Advanced&rsquo; interface.</p></li>
+
+<li><p>Go to &lsquo;Stitcher&rsquo; tab and&hellip;</p>
+
+<ol>
+<li>Change the Canvas Width to be 6000. The Height value should match the Image
+Size given in the above table. Leave all other values for FOV and Crop
+alone.</li>
+<li>Ensure &lsquo;Exposure corrected, low dynamic range&rsquo; is the only option selected.</li>
+<li>Change the format to &lsquo;JPEG&rsquo;</li>
+<li>Press &lsquo;Stitch!&rsquo; button and choose place to save hugin project file, then
+name and place to save resulting panorama.</li>
+</ol></li>
+</ol>
+
+<p>This should result in something that looks like the following:</p>
+
+<figure >
+    <a href="/img/panos/flat_photosphere.jpg">
+      <img src="/img/panos/flat_photosphere.jpg" width="100%"/>
+    </a>
+    
+    <figcaption>
+      
+      <p>
+        <p>Photosphere (shown as
+regular image, so appears flat).</p>
+
+      </p>
+      
+    </figcaption>
+    
+</figure>
+
+
+<h3 id="image-metadata">Image Metadata</h3>
+
+<p>Now, you need to set the metadata correctly on your image so that it <em>declares</em>
+itself as a Photo Sphere. This can be done with
+the <a href="http://owl.phy.queensu.ca/~phil/exiftool/" target="_blank">exiftool</a> command line
+tool. You&rsquo;ll notice in the table above I&rsquo;ve provided the appropriate commands to
+run for each FOV. Copy the appropriate command and run it in your terminal<sup class="footnote-ref" id="fnref:13"><a rel="footnote" href="#fn:13">9</a></sup>. Be
+sure to replace <code>path/to/image.jpg</code> with the appropriate path to your image.</p>
+
+<h3 id="uploading-to-facebook">Uploading to Facebook</h3>
+
+<p>Finally! You&rsquo;re ready to upload to facebook&hellip;or are you? Well, you are, but
+Facebook imposes the following restrictions:</p>
+
+<ul>
+<li>You can only upload to the web (desktop) version of Facebook&hellip;</li>
+<li>&hellip; and you have to post it directly to your timeline (you can&rsquo;t add it to an
+album directly<sup class="footnote-ref" id="fnref:14"><a rel="footnote" href="#fn:14">10</a></sup>)</li>
+<li>&hellip; and you can only upload one panorama at a time.</li>
+</ul>
+
+<p>If you follow all those steps, then it should totally work and you will end up
+with an awesome Photo Sphere to share with all your friends.</p>
+
+
+<figure >
+    <a href="https://www.facebook.com/oderby/posts/10154843778091522">
+        <img src="/img/panos/fb_photosphere.jpg" alt="Click to view the photosphere on Facebook." width="100%" />
+    </a>
+    
+    <figcaption>
+        <p>
+        Click to view the photosphere on Facebook.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<h2 id="future-directions">Future Directions</h2>
+
+<p>That&rsquo;s it! I hope if you made it this far you found this guide useful, or at
+least insightful&hellip;</p>
+
+<p>If I have time, I&rsquo;d like to investigate the following areas:</p>
+
+<ol>
+<li>Investigate how to use <a href="https://en.wikipedia.org/wiki/Bracketing" target="_blank">bracketing</a>
+to get a better overall exposure for the panoramas.</li>
+<li>What is lens <a href="https://en.wikipedia.org/wiki/Vignetting" target="_blank">vignette</a>, and do I
+need to correct/remove it?</li>
+<li>I find the max 6000 pixel photo size imposed by facebook to be limiting. So
+I&rsquo;d like to investigate ways to provide my own 360° photo viewer, using
+three.js. <a href="https://threejs.org/examples/?q=panorama#webgl_panorama_equirectangular" target="_blank">This</a> looks
+promising.</li>
+</ol>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:6">Technically, a panorama using a spherical projection for viewing. Google calls these &ldquo;Photo Spheres&rdquo;, and that&rsquo;s the term I&rsquo;ll use. However, Facebook calls them <a href="https://facebook360.fb.com/360-photos/" target="_blank">&ldquo;360° photos&rdquo;</a>. I dislike this term because they&rsquo;re not always 360° (in particular, for most panoramas you want to take with your DSLR.
+ <a class="footnote-return" href="#fnref:6">↩</a></li>
+<li id="fn:1">Alright, the only one I found that I actually tried. But after further searching, it seems to actually be the best one out there.
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2">I just fell, again, into the deep <del>trap</del> rabbit hole again figuring out where to point to for a good summary document here&hellip;
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+<li id="fn:4">Yes, that is the <a href="https://en.wikipedia.org/wiki/CliffsNotes" target="_blank">correct spelling</a>&hellip;
+ <a class="footnote-return" href="#fnref:4">↩</a></li>
+<li id="fn:5">This is an area that, despite several attempts, I haven&rsquo;t fully figured out yet. The focal length and other important lens information is always present in the photo EXIF data, but for some reason Hugin typically inputs some different values for focal length and focal length multiplier (crop factor), and I haven&rsquo;t figured out why yet. Typically, just leaving those alone seems fine, but if my panorama isn&rsquo;t aligning properly, I&rsquo;ll try putting in the exact values from the EXIF data, and that does the trick.
+ <a class="footnote-return" href="#fnref:5">↩</a></li>
+<li id="fn:8">This is another area I don&rsquo;t fully understand - how does Hugin estimate the field of view for the resulting panorama?? I&rsquo;m pretty sure the math is outlined <a href="http://wiki.panotools.org/DSLR_spherical_resolution" target="_blank">here</a>, but I think that article is a bit muddled&hellip;
+ <a class="footnote-return" href="#fnref:8">↩</a></li>
+<li id="fn:12">For uploading to Facebook. Although the result should work with any other Photo Sphere renderer, I haven&rsquo;t tested it.
+ <a class="footnote-return" href="#fnref:12">↩</a></li>
+<li id="fn:9">This was an especially infuriating endeavor, as Facebook has <a href="https://facebook360.fb.com/editing-360-photos-injecting-metadata/" target="_blank">detailed documentation</a> on how to do it, but it&rsquo;s focused mostly on producing 360° Photo Spheres using Photoshop. It took a lot of trial and error to figure out how to make it work for partial Photo Spheres.
+ <a class="footnote-return" href="#fnref:9">↩</a></li>
+<li id="fn:13">For the curious, this command specifies how to place our partial panorama inside a full spherical panorama (360° x 180°). See <a href="https://developers.google.com/streetview/spherical-metadata#metadata_properties" target="_blank">here</a> for further details and a nice illustration. The astute will observe that this is redundant with the work we already did to fit our original panorama into one of the predefined FOV Facebook specifies&hellip;and all I can say is &ldquo;Yes. Don&rsquo;t ask.&rdquo;
+ <a class="footnote-return" href="#fnref:13">↩</a></li>
+<li id="fn:14">Instead, you can move a photo from your timeline to an album. Just open the image, then go to Options &gt; &lsquo;Move to Other Album&rsquo;.
+ <a class="footnote-return" href="#fnref:14">↩</a></li>
+</ol>
+</div>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        February 25, 2017
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/website-setup/">Hosting my Personal Website (for Free!)</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        
+<div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = 'owenderby';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view
+  the <a href="http://disqus.com/?ref_noscript" target="_blank">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink" target="_blank">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+        </div>
+      
+      </div>
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container text-muted">
+      &copy; 2016
+      <a href="https://owenderby.com/">Owen Derby,</a> all rights reserved.
+      <br />
+      Powered by <a href="https://gohugo.io/" target="_blank">Hugo.</a>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://owenderby.com/js/docs.min.js"></script>
+<script src="https://owenderby.com/js/main.js"></script>
+
+<script src="https://owenderby.com/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>

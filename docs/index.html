@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="map[]" />
-    <meta name="description" content="Describe your website">
+    <meta name="description" content="My personal soap box.">
     <link rel="shortcut icon" type="image/x-icon" href="https://owenderby.com/img/favicon.ico">
     <title>Owen Derby</title>
     <meta name="generator" content="Hugo 0.17" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://owenderby.com/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="https://owenderby.com/css/extras.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
     
+    <link rel="stylesheet" type="text/css" href="https://owenderby.com/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://owenderby.com/css/extras.css" />
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -33,14 +34,20 @@ ga('send', 'pageview');
 
   </head>
 
-  <body>
-    <div id="wrap">
-      <nav class="navbar navbar-default">
-  <div class="container">
+<body>
+  <div id="wrap">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="https://owenderby.com/"><i class="fa fa-home"></i></a>
     </div>
-    <div id="navbar">
+    <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
       
         
@@ -56,40 +63,50 @@ ga('send', 'pageview');
   </div>
 </nav>
 
-      <section id="about">
-        <div class="container">
-        <div class="avatar">
-          <img class="img-circle" src="https://owenderby.com/img/profile.jpg" alt="Responsive image">
+    
+    <section id="about" class="container">
+      <div class="row bottom-xs">
+        
+        <div class="col-xs-12 col-sm-4">
+          <h3><strong>Owen Derby</strong></h3>
+          <img class="img-circle avatar" src="https://owenderby.com/img/profile.jpg" alt="Responsive image">
         </div>
-        <h3>Page is under construction! Check back soon.</h3>
-        <div class="social">
+        <div class="col-xs-12 col-sm-8">
+          <h3>I'm a developer and this is my website!</h3>
+          <h3>I sometimes work on cool <a href="/projects/">projects</a>,</h3>
+          <h3>occasionally I post a new <a href="/blog/">blog</a> post,</h3>
+          <h3>or see my <a href="/resume/">resume</a> to learn more about me.</h3>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="social">
 	<h4>
     
-	  <a href="http://github.com/username"><i class="fa fa-github"></i></a>
+	  <a href="http://github.com/oderby"><i class="fa fa-github"></i></a>
     
 
     
-	  <a href="mailto:email@example.com"><i class="fa fa-envelope"></i></a>
+
+    
+	  <a href="http://twitter.com/ocderby"><i class="fa fa-twitter"></i></a>
     
 
     
-	  <a href="http://twitter.com/username"><i class="fa fa-twitter"></i></a>
+	  <a href="http://linkedin.com/in/oderby"><i class="fa fa-linkedin"></i></a>
     
 
-    
-	  <a href="http://linkedin.com/in/username"><i class="fa fa-linkedin"></i></a>
-    
-
-    
-	  <a href="http://stackoverflow.com/username"><i class="fa fa-stack-overflow"></i></a>
     
 	</h4>
 </div>
 
         </div>
-      </section>
-    </div>
-    <footer>
+      </div>
+    </section>
+    
+  </div>
+  <footer>
   <div id="footer">
     <div class="container text-muted">
       &copy; 2016
@@ -111,5 +128,5 @@ ga('send', 'pageview');
 <script src="https://owenderby.com/js/ie10-viewport-bug-workaround.js"></script>
 
 
-  </body>
+</body>
 </html>

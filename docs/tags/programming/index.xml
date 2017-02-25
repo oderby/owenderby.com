@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Owen Derby</title>
-    <link>https://owenderby.com/index.xml</link>
+    <link>https://owenderby.com/tags/programming/index.xml</link>
     <description>Recent content on Owen Derby</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 25 Feb 2017 00:44:37 -0800</lastBuildDate>
-    <atom:link href="https://owenderby.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://owenderby.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hosting my Personal Website (for Free!)</title>
@@ -591,67 +590,6 @@ promising.&lt;/li&gt;
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:14&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://owenderby.com/projects/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
-      
-      <guid>https://owenderby.com/projects/</guid>
-      <description>&lt;section id=&#34;projects&#34;&gt;
-  &lt;div class=&#34;container&#34;&gt;
-    &lt;h3&gt;Projects&lt;/h3&gt;
-    &lt;div class=&#34;panel panel-default&#34;&gt;
-      &lt;div class=&#34;panel-body&#34;&gt;
-      &lt;h5&gt;
-        &lt;i class=&#34;fa
-        fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/oderby/elections_2016&#34;&gt;
-        elections_2016&lt;/a&gt;&lt;/strong&gt; - A scratchpad for my data dives into
-        presidential election data.
-      &lt;/h5&gt;
-      &lt;h5&gt;
-        &lt;i class=&#34;fa
-        fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/oderby/owenderby.com&#34;&gt;
-        owenderby.com &lt;/a&gt;&lt;/strong&gt; - The source code for this website. It&#39;s
-        self-referential!
-      &lt;/h5&gt;
-
-      &lt;h5&gt;
-        &lt;i class=&#34;fa
-        fa-table&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://docs.google.com/spreadsheets/d/19VmJKOBl8GthIXbXeaV4Mo-613QZuxSeYxObE3XPiMM/edit?usp=sharing&#34;&gt;
-        2017 Cabinet Confirmation Tracker&lt;/a&gt;&lt;/strong&gt; - A spreadsheet I threw
-        together to track confirmation of Trump&#39;s nominees in Jan 2017.
-      &lt;/h5&gt;
-      &lt;h5&gt;
-        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/oderby/cmap2d&#34;&gt;cmap2d&lt;/a&gt;&lt;/strong&gt;
-        - A small library for generating and sampling 2D RGB colormaps.
-      &lt;/h5&gt;
-      &lt;h5&gt;
-        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/mitpokerbots/pbots_calc&#34;&gt;pbots_calc&lt;/a&gt;&lt;/strong&gt;
-        - An open-source poker hand equity calculator library, written in C with
-        bindings for C and Java. Available for PC, Mac and Linux.
-      &lt;/h5&gt;
-
-      &lt;!-- &lt;h5&gt; --&gt;
-      &lt;!--   &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; --&gt;
-      &lt;!--   &lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 3&lt;/a&gt;&lt;/strong&gt; - Description. --&gt;
-      &lt;!-- &lt;/h5&gt; --&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://owenderby.com/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://owenderby.com/resume/</guid>
-      <description>&lt;p&gt;+++ date = &amp;ldquo;2016-11-05T21:05:33+05:30&amp;rdquo; title = &amp;ldquo;About me&amp;rdquo; +++&lt;/p&gt;
 </description>
     </item>
     

@@ -13,3 +13,135 @@ table, th, td {
     padding: 0px 5px;
     text-align: center;
 }
+
+figcaption, .caption {
+    font-style: italic;
+    text-align: center;
+    font-size: medium;
+}
+
+div.footer {
+    border-bottom-color: #0068c1;
+}
+
+#wrap {
+    margin-bottom: -51px;
+}
+
+html {
+    border: none;
+    margin: 15px auto 10px;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+body {
+    border-top-color: #0068c1;
+    border-top-width: 5px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.panel {
+    box-shadow: none;
+}
+
+a {
+    color: #13c76d;
+}
+
+a:hover {
+    color: #2269a8;
+}
+
+div.resume {
+    text-align: left;
+}
+
+.resume section {
+    margin: 0px 0px 40px 0px;
+}
+section > header {
+    text-transform:;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+section > hr {
+    margin-top:0px;
+    margin-bottom:15px;
+}
+
+.resume h3 {
+    font-size:25px;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+.resume h4 {
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.resume .row {
+    margin-bottom:10px;
+}
+
+.resume-subsection {
+    margin-bottom:25px;
+}
+
+.resume-section {
+    margin-left:20px;
+}
+
+span.date {
+    float:right;
+}
+
+div.right {
+    text-align:right;
+}
+
+.multi-column {
+    column-count: 2;
+}
+
+.multi-column li {
+/*     list-style-position: inside; */
+    margin-left: 1em;
+}
+
+.inline {
+/*     display: inline; */
+}
+
+div.resume .avatar {
+/*     margin-bottom: 15px; */
+    padding-top: 0px;
+    text-align:center;
+}
+
+div.resume .avatar img {
+/*     height: 160px; */
+    margin-bottom: 15px;
+}
+
+div.resume > header {
+/*     text-align: center; */
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+div.resume li {
+/*     text-align: justify; */
+}
