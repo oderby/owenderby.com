@@ -6,4 +6,5 @@
 # shopt -u extglob
 # cd ..
 
+rm -rf docs/*
 hugo -d docs

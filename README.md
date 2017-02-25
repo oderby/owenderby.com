@@ -25,12 +25,17 @@ I followed these tutorials ([1](http://www.moxie.io/post/static-websites-with-hu
 * http://paperjs.org/about/
 * https://imulus.github.io/retinajs/
 
-## Future Ideas:
+## Future Ideas/Work:
 
+* Provide contact method
+  - Something like [this](https://github.com/dwyl/html-form-send-email-via-google-script-without-server)?
+* Printable resume
+* Improve google analytics
+* Support 360° photospheres
 * cleaner format for blogs/ page
-* re-enable projects page
-* Make use of "ReadingTime" variable
 * Favicon
+* Uglify/Minify code (mostly as an exercise, not because I care about the load
+  performance)
 
 # Credits
 

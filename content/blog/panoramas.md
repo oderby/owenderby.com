@@ -1,11 +1,9 @@
 +++
-date = "2016-11-29T12:15:19-08:00"
+date = "2017-02-07T17:23:05-08:00"
 description = "Tips for stitching panoramas and rendering them as a '360° photos' on Facebook"
 tags = ["programming", "photography"]
-categories = ["programming", "photography"]
 title = "Making Panoramas"
 slug = "panoramas"
-draft = "true"
 +++
 
 I recently finished up a month of travel. In addition to seeing great friends
