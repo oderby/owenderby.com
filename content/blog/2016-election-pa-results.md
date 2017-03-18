@@ -31,13 +31,13 @@ candidate (Romney) by a wider margin than Obama did over his predecessor (Kerry)
 in 2008. That is, **Trump swung more votes in 2016 than Obama did in 2008**.
 
 Which brings me to my second point. 2008 was itself a remarkable election, no
-doubt. And when we compare 2016 to 2008, the differences seem stunning. Yet,
-when we step back and put things into the context of the surrounding elections,
-we see that **2008 was the anomaly, not 2016**. In fact, Republican candidates
-have been steadily gaining ground in Pennsylvania since 1996 (the earliest I was
-able to get data for). 2008 is the only year where that trend was reversed and
-Obama gained tremendous ground while the Republicans lost so much. However, in
-2012 Obama lost much of that ground and the Republicans were back on track.
+doubt. And when we compare 2016 to 2008, the swing seems stunning. Yet, when we
+step back and put things into the context of the surrounding elections, we see
+that **2008 was the anomaly, not 2016**. In fact, Republican candidates have
+been steadily gaining ground in Pennsylvania since 1996 (the earliest I was able
+to get data for). 2008 is the only year where that trend was reversed and Obama
+gained tremendous ground while the Republicans lost so much. However, in 2012
+Obama lost much of that ground and the Republicans were back on track.
 
 In this post, I examine the election data in detail to illustrate these points
 and try to explain
@@ -90,7 +90,7 @@ All results presented in this post are based on data I collected by manually
 scraping and formatting government and public repositories of results and
 registration data. Links and methodology can be found on github.
 
-## So What Happened?
+## So... What Happened?
 
 Let's start with the basics:
 
@@ -131,17 +131,14 @@ also allow me to explain the terminology and derived metrics I use.
   for the election. For simplicity, I will use this (votes cast over registered
   voters) as a measure of voter **Turnout**[^1]. There were 3,301,543 registered
   Republicans and 4,217,094 registered Democrats, giving a **Registration
-  Differential** (**RD**, the analog of VD for registration statistics) of
-  -0.105.
+  Differential** (**RD**) of -0.105.
 
 
 ### But, How Did Trump Win?
 
-From above, it's apparent that Trump won, but the state-wide numbers don't
-really help us understand how Trump won[^3]. To get a better understanding of
-what was going on, we need to dive deeper and look at county-level results. We
-start by examining the results for each county on a map. Perhaps we'll find some
-correlation into how voters voted and where they lived.
+To get a better understanding of how Trump won[^3], we need to dive deeper and
+look at county-level results. We start by examining the results for each county
+on a map.
 
 {{< figure src="/img/election_16/pa/results_map_pa_16.png"
  link="/img/election_16/pa/results_map_pa_16.png" width="100%"
@@ -152,28 +149,27 @@ by its VD, when sampled from a colormap which ranges from dark blue at -1
 (Democrat won), white at 0 (no clear winner), and dark red at +1 (Republican
 won). The hatches indicate which counties flipped from 2012 (a different party
 won this election than last) and the type of hatch indicates which party won:
-the dot-hatch means the democrat won and the cross-hatch means the republican
+the dot-hatch means the Democrat won and the cross-hatch means the Republican
 won.  !--->
 
-This map should look familiar, as it's similar to the basic result map
-calculated by every media outlet. Glancing quickly at this map, you might wonder
-how the election was so close in Pennsylvania, given how many counties are red
-and how few are blue (Trump won 56 counties to Clinton's 11). The answer
-highlights the major drawback to these sorts of maps - they obscure the effect
-of the absolute magnitude of the results across counties. That is, because
-Pennsylvania decides its electoral college by popular vote, across the entire
-state, it's the total number of votes each candidate receives that matters, not
-how many counties they won. Many of the counties which Trump won have a
-dramatically smaller populations (and thus votes cast), and thus contribute less
-towards the popular vote. Indeed, in 2016 Philadelphia county cast 707,631
-votes, which comprised more votes cast than the 35 smallest counties combined
-(that's more than half of Pennsylvania's 67 counties!).
+This map is similar to the basic result map calculated by every media
+outlet. Glancing at it quickly, you might wonder how the election was so close
+in Pennsylvania, given how many counties are red and how few are blue (Trump won
+56 counties to Clinton's 11). The answer highlights the major drawback to these
+sorts of maps - they obscure the effect of the absolute magnitude of the results
+across counties. Because Pennsylvania (like most states) decides its electoral
+college by popular vote across the entire state, it's the total number of votes
+each candidate receives that matters, not how many counties they won. Many of
+the counties which Trump won have dramatically smaller populations, and thus
+contribute less towards the popular vote. Indeed, in 2016 Philadelphia county
+cast 707,631 votes, which comprised more votes cast than the 35 smallest
+counties combined (more than half of Pennsylvania's 67 counties!).
 
 ***Talk about location of 4-5 largest cities in PA?***
 
 Figure 2 attempts to better illustrate the impact different counties have on
-each candidate's overall outcome, by taking into account the number of votes each
-county generated for each candidate.
+each candidate's overall outcome, by taking into account the number of votes
+each county generated for each candidate.
 
 <!---
 It's important to note that both Figures 2 and 3 are dealing with *marginal
@@ -227,12 +223,11 @@ VD).
 !-->
 
 First, note that once we take the absolute impact of each county into account,
-the race appears much closer (as seen by the closeness of the total size of the
-two bars). Second, also note how clearly this figure illustrates the outsized
-influence Philadelphia county has, as discussed above. Finally, notice how the
-number of marginal votes for republicans don't seem to be correlated strongly
-with VD (if they were, we'd expect to see each section get progressively smaller
-from left to right, as the VD and marginal vote yield decreased simultaneously).
+the race appears much closer. Second, also note how clearly this figure
+illustrates the outsized influence Philadelphia county has, which appears as the
+largest blue bar. Finally, notice how the number of marginal votes for
+Republicans don't seem to be correlated strongly with VD (if they were, we'd
+expect to see each section get progressively smaller from left to right).
 
 But to really understand how Trump won, we need to understand the delta - how
 things changed since the last presidential election in 2012.
@@ -242,7 +237,7 @@ things changed since the last presidential election in 2012.
     caption="Fig 3. Stacked bar chart of marginal votes by winning party." >}}
 
 Now, here's where things start to get interesting. Comparing Figure 3 with
-Figure 2 tells a striking story. While Clinton garnered as nearly as many
+Figure 2 tells a striking story. While Clinton garnered nearly as many
 marginal votes as Obama did in '12 (she was short by 3,728 votes), Trump earned
 75% more than Romney (Trump gained 353,065 additional votes). And Trump won
 these additional votes from nearly the same counties as Romney (only 4 counties
@@ -256,24 +251,23 @@ marginal votes it could explain. All comparisons continue to be made against
 
 ### Theory #1: Republicans had Higher Turnout
 
-Probably the most credible theory is that republican voters turned up in higher
-numbers than democrats in many counties. As Figure 4 shows, in counties Trump
-won, the turnout was about 3% higher on average (and as much as 8% higher in
-some counties) than those Clinton won. 3% may not seem like a lot, but remember,
-Trump won a lot of counties. So, if we pessimistically assume all these
-additional votes voted for Trump, that would represent 220,794 marginal votes
-(about 57% of the marginal votes Trump gained over Romney).
+Probably the most credible theory is that Republican voters turned up in higher
+numbers than Democrats in many counties. As Figure 4 shows, in counties Trump
+won, the turnout was on average about 3% higher (and as much as 8% higher in
+some counties) than those Clinton won. If we assume all these additional voters
+voted for Trump[^8], that would represent 220,794 marginal votes (about 57% of the
+marginal votes Trump gained over Romney).
 
 {{% fig src="/img/election_16/pa/dturnout_16.png" %}} Fig 4. Map (left)
 and [Tukey boxplots](https://en.wikipedia.org/wiki/Box_plot) (right) of
 distribution of d(turnout) by winning party in 2016." {{% /fig %}}
 
 
-But republicans could have turned up in a different way - by increasing the
+But Republicans could have turned up in a different way - by increasing the
 relative number of registered Republican voters since 2012. Interestingly, this
 can happen through three different mechanisms - new voters can register
-republican, registered democrats could have switched parties, or registered
-democrats could have been un-registered. More on this later ***INSERT LINK TO
+Republican, registered Democrats could have switched parties, or registered
+Democrats could have been un-registered. More on this later ***INSERT LINK TO
 SECTION***
 
 {{% fig src="/img/election_16/pa/dRD_16.png" %}} Fig 5. Map (left)
@@ -282,82 +276,73 @@ distribution of dRD by winning party in 2016. {{% /fig %}}
 
 As Figure 5 shows, relative registration increases were even more significant
 between counties Trump won and counties Clinton won. They differed by about 6%
-on average, and represent (again, taking a pessimistic view that all these extra
-registered Republicans turned out to vote for Trump) as much as 227,709 marginal
-votes for Trump, about 60% of the marginal votes he gained over Romney.
+on average, and represent[^9] as much as 227,709 marginal votes for
+Trump, about 60% of the marginal votes he gained over Romney.
 
-And while that definitely could potentially explain a majority of Trump's win,
-it's unlikely that it explains every vote, and assumes a very perfect situation,
-where every possible vote due to higher turnout or registrations voted for him -
-when in all likelihood these extra voters turned up in the same proportion as
-the rest of voters and voted closer along party lines. Using these more
-realistic assumptions, we'd attribute just 26,528 marginal votes (7%) from
-higher turnout and 160,250 marginal votes (42%) from shifting registrations to
-Trump. Note there is also likely some overlap in the impact of these phenomenon
-on these numbers (increased turnout is related to increased net republican
-registrations).
+And while that definitely could explain a majority of Trump's win, it's unlikely
+that it explains every vote - in all likelihood these extra voters turned up in
+the same proportion as the rest of voters and voted closer along party
+lines. Using these more realistic assumptions, we'd attribute just 26,528
+marginal votes (7%) from higher turnout and 160,250 marginal votes (42%) from
+shifting registrations to Trump. Note there is also likely some overlap in the
+impact of these phenomena on these numbers (increased turnout is related to
+increased net Republican registrations).
 
-**Conclusion:** While increased republican turnout and registrations across the
-state likely account for a large portion of Trumps extra marginal votes (close
-to 50%, using the reasonable estimates), these phenomenon don't explain them
+**Conclusion:** While increased Republican turnout and registrations across the
+state likely account for a large portion of Trump's extra marginal votes (close
+to 50%, using the reasonable estimates), these phenomena don't explain them
 all.
 
 ### Theory #2: Independent Candidates and Disillusioned Democrats
 
-Perhaps the other common theory I've heard is that many democrats were
-disillusioned with Clinton (including so-caled "Bernie Bros", amongst
+Perhaps the other common theory I've heard is that many Democrats were
+disillusioned with Clinton (including so-called "Bernie Bros", among
 others). The theory holds that these voters opted to vote for an independent
 candidate instead of along party lines, or simply didn't turn out to vote at
-all, and that's why Trump was able to win a historically 'blue' state. Can we
-see if this is true? As with all of these questions, it's hard to ascertain the
-truth, and nearly impossible to get a definitive answer with the data I'm
-using. Nevertheless, there are a few things we can look at.
+all, allowing Trump to win a historically 'blue' state. Though it's hard to
+ascertain the truth, there are a few things we can look at.
 
-First, we consider the possibility of a lower turnout by democrats. However,
-Figure 4 shows that turnout increased compared to 2012 in nearly all
-counties. And while it's possible that much of that turnout was republicans
-voters, it's unlikely it was exclusively republicans. In any event, we've
-already covered what impact that had on Trump's victory in the previous section
-(whether more Trump voters turned out or fewer would-be Clinton voters turned
-out, the result on marginal votes is the same), and we'll cover how it could
-have contributed to flipped counties next.
+First, we consider the possibility of a lower turnout by Democrats. However,
+Figure 4 shows that voter turnout increased compared to 2012 in nearly all
+counties. So it's unlikely that more Democrats stayed home than in previous
+years.
 
 Second, we can also consider the "flipped" counties as potential places where
-disillusioned democrats had an impact. As Figure 1 showed, only 3 counties
-flipped democrat -> republican (and 1 flipped republican -> democrat,
-counteracting the other 3 somewhat, but we'll ignore that here). But let's
-pessimistically attribute those losses entirely to democrats not voting for
-Clinton. Combined, these 3 counties contributed 64,717 marginal votes to Trump
-(only 17% of the 384,653 total votes Trump gained over Romney). Again, the total
-impact is probably less, because these flipped counties also factor into the
-some of the other phenomenons discussed in this section.
+disillusioned Democrats had an impact. As Figure 1 showed, only 3 counties
+flipped Democrat -> Republican (and 1 flipped Republican -> Democrat,
+counteracting the other 3 somewhat, but we'll ignore that here). Let's attribute
+those losses entirely to Democrats not voting for Clinton. Combined, these 3
+counties contributed 64,717 marginal votes to Trump (only 17% of the 384,653
+total votes Trump gained over Romney). Again, the total impact is probably less,
+because these flipped counties also factor into some of the other phenomena
+discussed in this section.
 
-Finally, we look at how the changes in votes for just the democratic candidate
-(**not** VD, just straight difference in votes Clinton and Obama received
-correlates with changes in votes for independent candidates. If many democrats
+Finally, we look at how the changes in votes for just the Democratic candidate
+(**not** VD, just straight difference in votes Clinton and Obama received)
+correlates with changes in votes for independent candidates. If many Democrats
 opted to vote for independent candidates rather than Clinton in this election,
 we should see a negative correlation between the two variables (indicating that
-the increase in the independent vote is correlated the decrease in democratic
+the increase in the independent vote is correlated the decrease in Democratic
 vote).
 
 {{< figure src="/img/election_16/pa/dIV_by_dDems_16.png"
     link="/img/election_16/pa/dIV_by_dDems_16.png" width="100%"
-    caption="Fig 6. Plot of dIV vs change in % votes for democratic candidate in 2012-2016. ">}}
+    caption="Fig 6. Plot of dIV vs change in % votes for Democratic candidate in 2012-2016. ">}}
 
-However, Figure 6. doesn't confirm this theory. In fact, there's a slightly
+However, Figure 6 doesn't confirm this theory. In fact, there's a slightly
 positive correlation between the two values. This means that in counties where
-Clinton loss the fewest votes (or even gained), percentage-wise, when compared
+Clinton lost the fewest votes (percentage-wise) when compared
 with Obama '12, there was a larger increase in the percentage of votes cast for
 independent candidates.
 
 But for argument's sake, let's assume that all of the additional votes (as a
 percentage) the independent candidates received in 2016 (over 2012) came
-exclusively from democrats who otherwise would have voted for Clinton. That
+exclusively from Democrats who otherwise would have voted for Clinton. That
 would explain only 142,027 of the marginal votes Trump garnered (37% of the
 total extra marginal votes he won in 2016).
 
 **Conclusion:** Although a popular refrain amongst Clinton-supporters in the
-aftermath of the election, it appears that disenfranchised democrats didn't help
+aftermath of the election, it appears that disenfranchised Democrats didn't help
 Trump as much as you might be led to believe. In the worst case, they explain
 around 50% of the marginal votes he gained, but more likely they only explain in
 the realm of 25% of them (assuming the independent votes came fairly uniformly from
@@ -365,20 +350,20 @@ Democrats and Republicans).
 
 ### Theory #3: Registered Democrats voted for Trump...
 
-There's one last explanation for what happened - that registered democrats
+There's one last explanation for what happened - that registered Democrats
 decided to vote for Trump. We can't measure this directly from results and
-registrations alone (we would need exit poll data to get a direct
-estimate). However, when we compare the count of votes for Trump against the
-number of registered republican voters, we find that in 14 of the counties Trump
+registrations alone; we would need exit poll data to get a direct
+estimate. However, when we compare the count of votes for Trump against the
+number of registered Republican voters, we find that in 14 of the counties Trump
 won (remember, he won 56 counties) there were more votes cast for Trump than
-registered republicans! And that is assuming that every registered republican in
+registered Republicans! And that is assuming that every registered Republican in
 those counties voted. Even so, that adds up to 56,575 votes for Trump that
-couldn't have come from any registered republicans, representing 15% of the
+couldn't have come from any registered Republicans, representing 15% of the
 extra marginal votes he gained over Romney.
 
-**Conclusion** It's likely some Democrats (and Indepenents) voted for Trump, but
-it's hard to say how many. It seems (I can't see any other explanation) that at
-least 56,575 did, but it's likely more (hard to say how many more).
+**Conclusion** It's likely some Democrats (and Independents) voted for Trump,
+but it's hard to say how many. It seems that at least 56,575 did, but it's
+likely more.
 
 ### Answer: It's Complicated
 
@@ -388,24 +373,24 @@ answer:
 1. Trump won a plurality of the vote in 56 (84%) of the counties. This was only
    2 more than Romney won in 2012.
 2. However, Trump won 353,065 more marginal votes than Romney earned, enough
-   that he beat Clinton by a mere 44,292 votes (less than 1% of all votes
-   cast). In fact, that's 40,564 more marginal votes than Obama garnered in
-   2012!
+   that he eked out a win over Clinton by a mere 44,292 votes (less than 1% of
+   all votes cast). In fact, that's 40,564 more marginal votes than Obama
+   garnered in 2012!
 2. We can speculate about where these additional votes for Trump over Romney
-   came from, but it's likely a combination of the following phenomenons:
- * Trump caused many Republicans to vote in the more rural counties. When
-   comparing counties Trump won against counties Clinton won, we see a 3% higher
-   turnout and 6% increase in RD. I'd guess this accounts for about 50% of the
-   extra votes.
+   came from, but it's likely a combination of the following phenomena:
+ * Trump caused many more Republicans to register and vote in the more rural
+   counties. When comparing counties Trump won against counties Clinton won, we
+   see a 6% increase in RD and a 3% higher turnout. I'd guess these differences
+   account for about 50% of the extra votes.
  * Trump flipped 3 counties, either because of above observed Republican turnout
-   or because disillusioned Democrats stayed home. I'd guess this accounts for
-   less than 17% of the extra votes.
+   or because disillusioned Democrats stayed home. I'd guess these flipped
+   counties account for less than 17% of the extra votes.
  * Votes for independent candidates rose in almost every county. However, it
    seems unlikely that it this increase was due solely to Democrat voters. I'd
    guess this accounts for less than 37% of the extra votes (likely much less).
  * In 14 of the counties that Trump won, there were more votes cast for Trump
-   than total registered republicans. This implies that some registered
-   democrats (and independents) voted for Trump in at least those counties. This
+   than total registered Republicans. This implies that some registered
+   Democrats (and independents) voted for Trump in at least those counties. This
    would account for at least 15% of the extra votes (likely more).
 
 **Questions**
@@ -429,7 +414,7 @@ answer:
 
 ***Methodology*** Figures 3 and 4 are histograms of the IV and turnout,
 respectively, by county. Counties are first grouped by the party of the winning
-candidate (blue for democrat, red for republican), and then binned.
+candidate (blue for Democrat, red for Republican), and then binned.
 
 ***Discussion*** Looking at Figures 3 and 4, there's no obvious correlation
 between the winning candidate in a county and either IV or turnout. Counties
@@ -451,7 +436,7 @@ interesting results on what Trump did right. Nevertheless, many people (myself
 included and, arguably, a majority of the US population) were surprised by the
 election results. At this point I (and if you'd made it this far, I suspect you,
 too) became curious: Is this surprising? Was this apparent sweep of counties
-unprecedented? Afterall, we heard a lot about how this was the first year in a
+unprecedented? After all, we heard a lot about how this was the first year in a
 long time that Pennsylvania "went red", so how did this year actually stack up
 against previous elections?
 
@@ -600,7 +585,7 @@ Democrat-leaning in registrations.
 Finally, just because I can, I’ve plotted many of the variables presented above
 for each county [here](/img/election_16/pa/counties_years.png). I find it pretty
 interesting to look at each individual county to see how it’s changed over the
-years. A very obvious curiosity is if one can train classifier on this data to
+years. A very obvious curiosity is if one can train a classifier on this data to
 see if we can cluster the counties. I made some feeble attempts but didn’t find
 any meaningful clusters.
 
@@ -713,3 +698,10 @@ states. Maybe someday.
 [^7]: It's not, due to the way the electoral college works in America. I suspect
     the general population's understanding of the electoral college spiked
     during and after the election this year.
+
+[^8]: A more conservative analysis would attribute these additional votes along
+    party lines, greatly reducing the number of marginal votes
+    represented. Either way, the resulting analysis still holds.
+
+[^9]: Assuming that all these extra registered Republicans turned out to vote
+    for Trump
