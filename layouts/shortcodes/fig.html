@@ -1,6 +1,6 @@
 <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
     <a href="{{ .Get "src" }}">
-      <img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}width="100%"/>
+      <img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}"{{ else }}width="100%"{{ end }} />
     </a>
     {{ if or (.Get "title") (ge (len .Inner) 1) }}
     <figcaption>

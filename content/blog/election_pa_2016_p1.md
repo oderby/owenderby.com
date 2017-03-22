@@ -53,7 +53,7 @@ look at the map of election results by county presented in Figure 1, you would
 be forgiven for wondering how the election was so close, given how many counties
 are red (Trump won 56 counties to Clinton's 11).
 
-{{% fig src="/img/election_16/pa/results_map_pa_16.png" %}} Fig 1. Map of 2016
+{{% fig src="/img/election_16/pa/results_map_pa_16.png" width="75%" %}} Fig 1. Map of 2016
 election results by county. Counties are colored according to their normalized
 marginal votes. Cross-hatches indicate counties which Obama won in '12 that
 'flipped' to Trump in '16. Dot-hatches indicate the reverse
