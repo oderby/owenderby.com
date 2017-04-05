@@ -29,7 +29,8 @@ elections, we see that **2016 was NOT an anomaly, but 2008 was**.
 
 I approached this as an exploration, with no preconceived conclusions. I have
 broken my results into two parts. The first part (the remainder of this post)
-focuses on the 2016 results and how Trump won, while the [second part](part2)
+focuses on the 2016 results and how Trump won, while
+the [second part]({{< relref "election_pa_2016_p2.md" >}})
 examines previous elections, highlighting different trends that help put this
 election into context.
 
@@ -40,7 +41,7 @@ for Trump to have won Pennsylvania, he must of done very well at the polls, but
 I was surprised to see just how much he improved over Romney to pull out this
 win. After presenting my analysis and results that led me to that discovery, I
 dive deeper into the data, to explore how Trump was able to make these gains,
-and try quantify their impact on his win.
+and try to quantify their impact on his win.
 
 This was a close race. Trump won the popular vote by a mere 44,292 votes (less
 than 1% of all votes cast). In contrast, Obama won Pennsylvania in 2012 by
@@ -158,7 +159,10 @@ registered Democrat voters. Interestingly, this can happen through three
 different mechanisms - new voters can register as Republican, registered
 Democrats could have switched parties, or registered Democrats could have been
 un-registered. For now, we'll only look at the overall changes to
-registrations - in [Part 2](part2), we'll dig deeper into these details.
+registrations -
+in
+[Part 2]({{< relref "election_pa_2016_p2.md#historical-registration-data" >}}),
+we'll dig deeper into these details.
 
 Figure 4 examines how the difference in relative Republican registrations (as a
 percentage of total registrations) between 2016 and 2012 is distributed. Because
@@ -277,17 +281,19 @@ more subjective and qualitative, and draws on expertise in areas of demographics
 and political theory that I utterly lack. So I'll leave that discussion to
 others.
 
-If you've enjoyed this post, be sure to check out [Part 2](part2),
-where I dive into the data from the previous presidential elections in
-Pennsylvania and try to put this election in a historical context. And, if you
-find an issue or want to let me know what you think of this writeup, please feel
-free to leave a comment below or contact me directly.
+If you've enjoyed this post, be sure to check
+out [Part 2]({{< relref "election_pa_2016_p2.md" >}}), where I dive into the
+data from the previous presidential elections in Pennsylvania and try to put
+this election in a historical context. And, if you find an issue or want to let
+me know what you think of this writeup, please feel free to leave a comment
+below or contact me directly.
 
 Finally, all data, results and discussions pertain exclusively to presidential
 elections in Pennsylvania state. Someday, I'd like to extend this analysis to
 other states, but that's limited by time and the availability of county-level
 data. If anyone wants to explore the data further themselves, I've made the
-notebook and data used available on [Github](repolink). I collected the data by
+notebook and data used available
+on [Github](https://github.com/oderby/elections_2016). I collected the data by
 manually scraping and formatting government and public repositories; source
 links and methodology can also be found on Github.
 
