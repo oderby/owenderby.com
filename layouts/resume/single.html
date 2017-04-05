@@ -7,11 +7,12 @@
         <header>
           <div class="row middle-xs">
           <div class="avatar col-xs-12 col-sm-4">
-            <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
-            <br />
             <h3><strong>{{ .Site.Params.author }}</strong></h3>
+            <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
+            {{ partial "social.html" . }}
           </div>
           <div class="summary col-xs-12 col-sm-8">
+            <br />
             <p><strong>About me: </strong>{{ .Site.Data.resume.basics.summary | markdownify }}</p>
           </div>
         </header>

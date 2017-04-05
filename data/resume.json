@@ -2,7 +2,7 @@
     "basics": {
         "name": "Owen C. Derby",
         "website": "https://owenderby.com",
-        "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building a new sub-system, I'm adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I'm also a ping-pong enthusiast, and have been known join in the occasional pick-up basketball or soccer game. Currently, I'm contributing actively to the [5calls](https://5calls.org) project and finding ways to empower my peers to be better citizens."
+        "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building a new sub-system, I'm adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I also care about having a positive impact on our planet and society. Currently, I'm helping build and run [5calls.org](https://5calls.org), but I am always looking for other ways to get involved.\n\nI'm actively seeking new full-time engineering opportunities at this time. If you have a role you'd like to discuss, please [get in touch](mailto:me@owenderby.com). While I'm most passionate about having an impact on climate change, I'm interested in any opportunity to have an impact outside this little tech bubble which I occupy."
     },
     "work": [
         {
@@ -25,7 +25,7 @@
                     "endDate": "2015-05-01",
                     "highlights": [
                         "Designed and built backend services in Go and associated SQL databases for user accounts, data and Stripe payments.",
-                        "Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the [Metro](https://metro.flux.io/metro/) product.",
+                        "Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the [Metro](https://blog.flux.io/flux-metro-what-we-learned-11fc82b6de03) product.",
                         "Implemented logical subsystems for a 'building configurator', while helping re-scope the project to deliver a smaller set of features on time."
                     ]
                 }
