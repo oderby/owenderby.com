@@ -1,13 +1,9 @@
 +++
-tags = [
-]
-categories = [
-]
+tags = ["anaylsis", "politics"]
 title = "An examination of 2016 Election Results in Pennsylvania"
 description = ""
-slug = "election_2016_pa_results_p1"
-date = "2017-03-08T16:20:37-08:00"
-draft = "true"
+slug = "election_2016_pa_p1"
+date = "2017-03-22T13:20:37-08:00"
 +++
 
 Like many, the election this past November is still on my mind. While I've
@@ -29,7 +25,7 @@ Second, that a Republican won Pennsylvania this year is only remarkable when
 compared to Obama's win in 2008. We often look at the 2008 election as the
 obvious comparison for this election, forgetting what a remarkable election that
 was itself. It turns out that when we look at the surrounding presidential
-elections, we see that **2008 was the anomaly, not 2016**.
+elections, we see that **2016 was NOT an anomaly, but 2008 was**.
 
 I approached this as an exploration, with no preconceived conclusions. I have
 broken my results into two parts. The first part (the remainder of this post)
@@ -295,6 +291,8 @@ notebook and data used available on [Github](repolink). I collected the data by
 manually scraping and formatting government and public repositories; source
 links and methodology can also be found on Github.
 
+***Thanks*** *to Karen Hao, Ryan Ko, Andrew Zukoski, Shane Leese and Lakshman
+Sankar for reading drafts of this.*
 
 [^1]: A more rigorous approach for computing voter turnout is to use voting age
     population (VAP) or voting eligible population (VEP) as the denominator. VAP

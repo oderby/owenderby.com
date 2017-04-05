@@ -16,6 +16,7 @@ table, th, td {
 
 figure {
     text-align:center;
+    margin: auto;
 }
 
 figcaption, .caption {
