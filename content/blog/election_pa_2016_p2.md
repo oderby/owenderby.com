@@ -1,9 +1,10 @@
 +++
 tags = ["anaylsis", "politics"]
 title = "An examination of 2016 Election Results in Pennsylvania - Part 2"
-description = ""
+description = "Part 2/2 analyzing 2016 and past presidential elections in Pennsylvania state"
 slug = "election_2016_pa_p2"
-date = "2017-04-04T19:20:37-08:00"
+date = "2017-04-08T19:20:37-08:00"
+draft = true
 +++
 
 *This is the second post in a two-part series, examining presidential election
