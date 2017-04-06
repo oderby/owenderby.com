@@ -22,15 +22,25 @@
         <![endif]-->
 
     
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+    
+    if (window.location.hostname !== "localhost") {
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-38535701-2', 'auto');
+      ga('send', 'pageview');
+    }
+  </script>
 
-ga('create', 'UA-38535701-2', 'auto');
-ga('send', 'pageview');
-</script>
 
   </head>
 
@@ -68,14 +78,38 @@ ga('send', 'pageview');
         <header>
           <div class="row middle-xs">
           <div class="avatar col-xs-12 col-sm-4">
-            <img class="img-circle" src="https://owenderby.com/img/profile.jpg" alt="Responsive image">
-            <br />
             <h3><strong>Owen Derby</strong></h3>
+            <img class="img-circle" src="https://owenderby.com/img/profile.jpg" alt="Responsive image">
+            <div class="social">
+	<h4>
+    
+	  <a href="http://github.com/oderby"><i class="fa fa-github"></i></a>
+    
+
+    
+	  <a href="mailto:me@owenderby.com"><i class="fa fa-envelope"></i></a>
+    
+
+    
+	  <a href="http://twitter.com/ocderby"><i class="fa fa-twitter"></i></a>
+    
+
+    
+	  <a href="http://linkedin.com/in/oderby"><i class="fa fa-linkedin"></i></a>
+    
+
+    
+	</h4>
+</div>
+
           </div>
           <div class="summary col-xs-12 col-sm-8">
+            <br />
             <p><strong>About me: </strong>I&rsquo;m an engineer: I like solving problems and fixing things. Whether it&rsquo;s tracking down a bug or building a new sub-system, I&rsquo;m adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.</p>
 
-<p>When I&rsquo;m not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I&rsquo;m also a ping-pong enthusiast, and have been known join in the occasional pick-up basketball or soccer game. Currently, I&rsquo;m contributing actively to the <a href="https://5calls.org" target="_blank">5calls</a> project and finding ways to empower my peers to be better citizens.</p>
+<p>When I&rsquo;m not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I also care about having a positive impact on our planet and society. Currently, I&rsquo;m helping build and run <a href="https://5calls.org" target="_blank">5calls.org</a>, but I am always looking for other ways to get involved.</p>
+
+<p>I&rsquo;m actively seeking new full-time engineering opportunities at this time. If you have a role you&rsquo;d like to discuss, please <a href="mailto:me@owenderby.com" target="_blank">get in touch</a>. While I&rsquo;m most passionate about having an impact on climate change, I&rsquo;m interested in any opportunity to have an impact outside this little tech bubble which I occupy.</p>
           </div>
         </header>
         
@@ -120,7 +154,7 @@ ga('send', 'pageview');
                       
                         <li>Designed and built backend services in Go and associated SQL databases for user accounts, data and Stripe payments.</li>
                       
-                        <li>Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the <a href="https://metro.flux.io/metro/" target="_blank">Metro</a> product.</li>
+                        <li>Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the <a href="https://blog.flux.io/flux-metro-what-we-learned-11fc82b6de03" target="_blank">Metro</a> product.</li>
                       
                         <li>Implemented logical subsystems for a &lsquo;building configurator&rsquo;, while helping re-scope the project to deliver a smaller set of features on time.</li>
                       

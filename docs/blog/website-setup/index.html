@@ -22,15 +22,25 @@
         <![endif]-->
 
     
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+    
+    if (window.location.hostname !== "localhost") {
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-38535701-2', 'auto');
+      ga('send', 'pageview');
+    }
+  </script>
 
-ga('create', 'UA-38535701-2', 'auto');
-ga('send', 'pageview');
-</script>
 
   </head>
 
@@ -213,19 +223,6 @@ you roll your eyes, at least I didn&rsquo;t build it from scratch!)</p>
               <div class="related-posts">
                 <h5>Related Posts</h5>
                 
-                  <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                      <h6 style="text-align: right">
-                        February 7, 2017
-                      </h6>
-                    </div>
-                    <div class="col-sm-8 col-md-8 col-lg-8">
-                      <h6 style="text-align: left">
-                        <strong><a href="/blog/panoramas/">Making Panoramas</a></strong>
-                      </h6>
-                    </div>
-                  </div>
-                
               </div>
             </div>
           </div>
@@ -238,7 +235,7 @@ you roll your eyes, at least I didn&rsquo;t build it from scratch!)</p>
     (function() {
       
       
-      if (window.location.hostname == "localhost")
+      if (window.location.hostname === "localhost")
         return;
 
       var disqus_shortname = 'owenderby';

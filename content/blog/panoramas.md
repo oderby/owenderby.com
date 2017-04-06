@@ -1,7 +1,7 @@
 +++
 date = "2017-02-07T17:23:05-08:00"
 description = "Tips for stitching panoramas and rendering them as a '360° photos' on Facebook"
-tags = ["programming", "photography"]
+tags = ["guide","photography"]
 title = "Making Panoramas"
 slug = "panoramas"
 +++
