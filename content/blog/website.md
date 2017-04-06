@@ -117,5 +117,11 @@ personal static website up and served on your custom domain! And of course,
 you could do this all for free if you were satisfied with hosting it on the
 GitHub domain.
 
+**Edit (April 6 2016):** *I also setup gmail for owenderby.com using Mailgun,
+all for free. Rather than repeat the steps here, you can follow
+this
+[guide](https://simplyian.com/2015/01/07/Hacking-GMail-to-use-custom-domains-for-free/) to
+do it yourself.*
+
 [^1]: What kind of developer would I be if I didn't build it myself? (And before
     you roll your eyes, at least I didn't build it from scratch!)
