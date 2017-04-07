@@ -3,8 +3,7 @@ tags = ["anaylsis", "politics"]
 title = "An examination of 2016 Election Results in Pennsylvania - Part 2"
 description = "Part 2/2 analyzing 2016 and past presidential elections in Pennsylvania state"
 slug = "election_2016_pa_p2"
-date = "2017-04-08T19:20:37-08:00"
-draft = true
+date = "2017-04-07T14:10:12-08:00"
 +++
 
 *This is the second post in a two-part series, examining presidential election
@@ -12,7 +11,7 @@ results from Pennsylvania. If you haven't
 read [Part 1]({{< relref "election_pa_2016_p1.md" >}}) yet, you should start
 there.*
 
-In my first post, we have examined the data for 2016 (and some from 2012) and
+In my first post, we examined election data from 2016 (and some from 2012) and
 uncovered some interesting results on what Trump did right. Nevertheless, many
 people (myself included and, arguably, a majority of the US population) were
 surprised by the election results. At this point I became curious: should we
@@ -42,7 +41,8 @@ We start with a look at the voting results from all elections since 1996.
 {{< fig src="/img/election_16/pa/hist_results.png" >}} Fig 1. Three different
 ways of visualizing the normalized marginal votes by county from elections
 1996-2016: Tukey boxplots (left), on a map (center) and as stacked bar charts,
-by candidate (right). {{< /fig >}}
+by candidate (right). The boxplots and map show the normalized marginal votes
+(as a percentage), while the bar charts show total marginal votes. {{< /fig >}}
 
 While it's tempting to see Trump's victory as an anomaly (the "first time in
 recent history Pennsylvania has gone red" perspective), Figure 1 tells a more
@@ -78,11 +78,13 @@ percentage of votes for independent candidates (left) and its difference
 (right) from the elections in 1996-2016. {{< /fig >}}
 
 Finally, we wrap up this section by looking at how the independent vote has
-changed over the years. From Figure 3, we see two facts. First, although votes
-for independent candidates rose in 2016, it was comparable to 2000 and is
-totally dwarfed by 1996. Second, while votes for independent candidates
-increased in every county in 2016, this shift is insignificant in scale when
-compared with the shift in normalized marginal votes (seen in Figure 2).
+changed over the years in Figure 3. Although votes for independent candidates
+rose in 2016, it was comparable to 2000 and is totally dwarfed by 1996. Further,
+while votes for independent candidates increased in every county in 2016, this
+shift is insignificant in scale when compared with the shift in normalized
+marginal votes (seen in Figure 2). Taken together, these two facts suggest that
+the number of votes garnered by independent candidates this year was normal and
+consistent with previous elections.
 
 ### Historical Registration Data
 
@@ -95,8 +97,8 @@ the basic registration variables have changed over the years[^6].
 {{% fig src="/img/election_16/pa/variables_dists_years.png" %}}
 Fig 4. Distributions by year of (from left to right): total registered voters,
 relative registered Republicans, and turnout. The second row shows how each
-variable changed between elections. Change in registered voters is calculated as
-the percent change over the last election. {{% /fig %}}
+variable changed between elections. Registered voters is normalized by the
+county population estimates for each year. {{% /fig %}}
 
 From Figure 4, note that the total number of registered voters has
 remained somewhat stable in Pennsylvania since 2000. It rose by less than 10% in
@@ -120,7 +122,7 @@ the winning in that county in that election (red=Republicans,
 blue=Democrats). {{% /fig %}}
 
 As Figure 5 indicates, the variables are indeed positively correlated, matching
-our intution above. I find it interesting how the 2008 and 20016 distributions
+our intuition above. I find it interesting how the 2008 and 2016 distributions
 are distributed over a wider range, while 2004 and 2012 are much more condensed
 around the origin. It's also remarkable how few counties exhibit opposing shifts
 (shift positive in registrations but negative in votes, or vice versa). While this
@@ -174,10 +176,10 @@ any meaningful clusters.
 
 ## Closing Thoughts
 
-In the wake of the 2016 election, we heard, in the media and on social media,
+In the wake of the 2016 election we heard, in the media and on social media,
 many exceptional stories about how all the polls were wrong and how surprising
 the result was to many people. From that, many of us, myself included,
-extrapolated that this election was anomolous - that something crazy happened
+extrapolated that this election was anomalous - that something crazy happened
 that's never happened before. And while that may have been true about the state
 of the political climate in the US or the rhetoric of the campaigns, the data
 doesn't support that conclusion. If anything, 2008 was the anomaly in recent
