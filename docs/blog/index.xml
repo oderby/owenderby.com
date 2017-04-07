@@ -6,8 +6,780 @@
     <description>Recent content in Blog-rsses on Owen Derby</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 25 Feb 2017 00:44:37 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Apr 2017 14:10:12 -0800</lastBuildDate>
     <atom:link href="https://owenderby.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An examination of 2016 Election Results in Pennsylvania - Part 2</title>
+      <link>https://owenderby.com/blog/election_2016_pa_p2/</link>
+      <pubDate>Fri, 07 Apr 2017 14:10:12 -0800</pubDate>
+      
+      <guid>https://owenderby.com/blog/election_2016_pa_p2/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;This is the second post in a two-part series, examining presidential election
+results from Pennsylvania. If you haven&amp;rsquo;t
+read &lt;a href=&#34;https://owenderby.com/blog/election_2016_pa_p1/&#34; target=&#34;_blank&#34;&gt;Part 1&lt;/a&gt; yet, you should start
+there.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In my first post, we examined election data from 2016 (and some from 2012) and
+uncovered some interesting results on what Trump did right. Nevertheless, many
+people (myself included and, arguably, a majority of the US population) were
+surprised by the election results. At this point I became curious: should we
+have been surprised? Was this apparent sweep truly unprecedented? After all, we
+heard a lot about how this was the first year in a long time that Pennsylvania
+&amp;ldquo;went red&amp;rdquo;, but how did this year actually stack up against previous elections?&lt;/p&gt;
+
+&lt;p&gt;To shed some light on these questions, we can take a more comprehensive look at
+data from previous elections. So, I gathered county-level results for every
+presidential election in Pennsylvania since 1996&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, and registration data
+since 2000. In this post, we re-examine several of the metrics discussed in Part
+1 for previous elections, to see if there are larger trends that have been at
+play in Pennsylvania elections.&lt;/p&gt;
+
+&lt;!--
+Unlike part 1, which had more of a direct
+narrative for the data presented, this post is a bit more spread out, presenting
+several disparate results I found interesting. Also, this analysis is
+necessarily more open-ended, because as we look backwards, demographic and other
+external trends play larger roles in the data, which I haven&#39;t accounted for, so
+I&#39;m reticent to draw any conclusions from this data alone.
+!--&gt;
+
+&lt;h2 id=&#34;historical-election-results&#34;&gt;Historical Election Results&lt;/h2&gt;
+
+&lt;p&gt;We start with a look at the voting results from all elections since 1996.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/hist_results.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/hist_results.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+         Fig 1. Three different
+ways of visualizing the normalized marginal votes by county from elections
+1996-2016: Tukey boxplots (left), on a map (center) and as stacked bar charts,
+by candidate (right). The boxplots and map show the normalized marginal votes
+(as a percentage), while the bar charts show total marginal votes. 
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;While it&amp;rsquo;s tempting to see Trump&amp;rsquo;s victory as an anomaly (the &amp;ldquo;first time in
+recent history Pennsylvania has gone red&amp;rdquo; perspective), Figure 1 tells a more
+nuanced story. Indeed, the first thing you should notice is the gradual yet
+steady shift across the state towards the right since the 1996 election. From
+this perspective, 2008 appears to be the anomaly. It&amp;rsquo;s the only election when
+the distribution of marginal votes actually shifted slightly back to the
+left. To achieve this, Obama won an extraordinary number of additional marginal
+votes while McCain lost around 100,000. Every other year, we see the number of
+marginal votes for Republicans steadily rising while Democrats maintain. In
+2016, Trump managed to make two elections&amp;rsquo; worth of gains in one, and how he did
+that was the focus of the first part of this series.&lt;/p&gt;
+
+&lt;p&gt;This trend to the right is reinforced by examining flipped counties. With the
+exception of Chester county in 2016, 2008 is the only year since 1996 when any
+county flipped Democrat. That means that since 1996, a net of 17 counties have
+flipped from voting Democrat (in 1996) to Republican (in 2016).&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/hist_d_results.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/hist_d_results.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+         Fig 2. Visualizing
+changes in normalized marginal votes for years 1996-2016 with: Tukey boxplots
+(left) and on a map (right). In each map, every county is colored according to
+its shift in normalized marginal votes from the previous year. Counties in which
+votes shifted away from the winning candidate have been shaded. 
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I provide Figure 2 simply because it is the clearest way of seeing how
+widespread the shift to the right has been in the state, even amongst counties
+which continue voting Democrat. Also, I found it surprising how most of the
+counties exhibit shifts of &amp;gt;3% every year, and most often in the same direction
+for each election.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/results_IV_years.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/results_IV_years.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+         Fig 3. Plotting
+percentage of votes for independent candidates (left) and its difference
+(right) from the elections in 1996-2016. 
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Finally, we wrap up this section by looking at how the independent vote has
+changed over the years in Figure 3. Although votes for independent candidates
+rose in 2016, it was comparable to 2000 and is totally dwarfed by 1996. Further,
+while votes for independent candidates increased in every county in 2016, this
+shift is insignificant in scale when compared with the shift in normalized
+marginal votes (seen in Figure 2). Taken together, these two facts suggest that
+the number of votes garnered by independent candidates this year was normal and
+consistent with previous elections.&lt;/p&gt;
+
+&lt;h3 id=&#34;historical-registration-data&#34;&gt;Historical Registration Data&lt;/h3&gt;
+
+&lt;p&gt;Looking at results is one thing, but as we saw
+in
+&lt;a href=&#34;https://owenderby.com/blog/election_2016_pa_p1/#republicans-had-increased-representation&#34; target=&#34;_blank&#34;&gt;Part 1&lt;/a&gt;,
+looking at registration data can also be insightful. To start, let&amp;rsquo;s look at how
+the basic registration variables have changed over the years&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/variables_dists_years.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/variables_dists_years.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 4. Distributions by year of (from left to right): total registered voters,
+relative registered Republicans, and turnout. The second row shows how each
+variable changed between elections. Registered voters is normalized by the
+county population estimates for each year.&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;From Figure 4, note that the total number of registered voters has
+remained somewhat stable in Pennsylvania since 2000. It rose by less than 10% in
+most counties since 2000, and actually declined in many 2012.&lt;/p&gt;
+
+&lt;p&gt;Unsurprisingly, 2016 saw the highest turnout of the past 5 elections. However,
+I&amp;rsquo;m surprised to see that turnout dropped in 2008 - it seemed with how many
+extra MV Obama won, it would have been due at least in part to higher
+turnout. Further indication of how anomalous 2008 really was.&lt;/p&gt;
+
+&lt;p&gt;Finally, if we compare Figure 4 with Figure 2, it seems that the change in
+relative Republican registrations has varied similarly to the change in
+normalized marginal votes for each election. But the shifts in relative
+Republican registrations are much less pronounced. Let&amp;rsquo;s see just how the two
+variables correlate.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/dvd_vs_drd_years.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/dvd_vs_drd_years.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 5. Plots change
+in relative Republican registrations against change in normalized marginal votes
+for each county in each election. Points are colored according to the party of
+the winning in that county in that election (red=Republicans,
+blue=Democrats).&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;As Figure 5 indicates, the variables are indeed positively correlated, matching
+our intuition above. I find it interesting how the 2008 and 2016 distributions
+are distributed over a wider range, while 2004 and 2012 are much more condensed
+around the origin. It&amp;rsquo;s also remarkable how few counties exhibit opposing shifts
+(shift positive in registrations but negative in votes, or vice versa). While this
+is typical of correlated variables, I&amp;rsquo;m still surprised by how few counties fall
+in the second or fourth quadrants of the plots.&lt;/p&gt;
+
+&lt;p&gt;Also, as we noted above, the shift in votes is generally of a higher magnitude
+than the shift in registrations. I guess both are somewhat intuitive, but
+together they suggest that we might be able to assemble a primitive estimator
+for election results by looking at how registrations shifted since the previous
+election. But I leave that for future exploration.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/registration_changes_years.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/registration_changes_years.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 6. Visualizing how the changes in registered voters and relative Republican
+registrations between elections are distributed geographically (top) and along
+the two axes (bottom).&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Finally, I wanted to explore how changes in total registrations and relative
+Republican registrations jointly varied, because I was curious if there was any
+relation between the two (perhaps as a result of voter suppression/purging,
+etc.) In Figure 6, each point plotted in the bottom row corresponds to a county
+from the map above, and every county is colored according to the discretized 2D
+colormap on the right. The legend in the bottom right gives a general way of
+interpreting the plots based on which quadrant each county is in. For example,
+counties in the upper left quadrant experienced a net loss of registrations but
+a shift towards a larger percentage of voters registered Republican, meaning
+that there must have been a net loss of registered Democrats.&lt;/p&gt;
+
+&lt;p&gt;One thing that&amp;rsquo;s apparent from the figure is that the shifts are not strongly
+correlated across the state. However, it is interesting that the southwestern
+counties are the only ones to consistently see increases in relative percentage
+of Republicans registered, while the southeastern counties have only gotten more
+Democrat-leaning in registrations.&lt;/p&gt;
+
+&lt;h3 id=&#34;summary-of-all-data-by-county&#34;&gt;Summary of all Data, by County&lt;/h3&gt;
+
+&lt;!-- Pulling it all Together !--&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/largest_cities_counties_years.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/largest_cities_counties_years.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 7. Visualizing a subset of the examined variables for the counties home to
+the 5 largest cities in Pennsylvania.&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Figure 7 presents the statistics for the counties where the 5 largest cities in
+Pennsylvania (Philadelphia, Pittsburgh, Allentown, Erie, and Reading)
+reside. Nothing in particular jumps out at me, I just find it an interesting
+visualization. It doesn&amp;rsquo;t fit nicely on a single page, but I&amp;rsquo;ve also generated
+the same plots for every county &lt;a href=&#34;https://owenderby.com/img/election_16/pa/counties_years.png&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A very obvious curiosity is if one can train a classifier on this data to
+see if we can cluster the counties. I made some feeble attempts but didn’t find
+any meaningful clusters.&lt;/p&gt;
+
+&lt;h2 id=&#34;closing-thoughts&#34;&gt;Closing Thoughts&lt;/h2&gt;
+
+&lt;p&gt;In the wake of the 2016 election we heard, in the media and on social media,
+many exceptional stories about how all the polls were wrong and how surprising
+the result was to many people. From that, many of us, myself included,
+extrapolated that this election was anomalous - that something crazy happened
+that&amp;rsquo;s never happened before. And while that may have been true about the state
+of the political climate in the US or the rhetoric of the campaigns, the data
+doesn&amp;rsquo;t support that conclusion. If anything, 2008 was the anomaly in recent
+elections. As Part 1 concluded, Trump did many things to win, but that win was
+just a hastening of an existing trend towards voting for Republican candidates
+in Pennsylvania.&lt;/p&gt;
+
+&lt;p&gt;Producing this second post was challenging because going back in time provided a
+whole variety of exciting ways to analyze the data. Every time I&amp;rsquo;d sit down to
+answer one question, I&amp;rsquo;d wind up with 5 more questions to investigate
+next. Choosing which parts of my analysis to pull out and clean up for this post
+was a challenge, to say the least. As a result, the post is a bit more like a
+collection of interesting figures than a cohesive narrative building to a
+singular conclusion. Nevertheless, I hope you enjoyed it.&lt;/p&gt;
+
+&lt;p&gt;As I mentioned at the end of Part 1, all data and code for generating the
+results and figures in this series, plus a lot of code and figures which didn&amp;rsquo;t
+make it into the posts, is available
+on &lt;a href=&#34;https://github.com/oderby/elections_2016&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;. Someday, I&amp;rsquo;d like to come
+back and continue this exploration, but if you&amp;rsquo;re excited about it, please jump
+in and let me know what you find!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Edit: After I wrote most of this post, I
+discovered &lt;a href=&#34;http://datafordemocracy.org/&#34; target=&#34;_blank&#34;&gt;Data for Democracy&lt;/a&gt;
+had
+&lt;a href=&#34;https://medium.com/data-for-democracy/election-transparency-part-1-introducing-the-data-8258a1132315&#34; target=&#34;_blank&#34;&gt;released county-level election and registration data&lt;/a&gt; from
+the 2016 election for most states. And they are supposedly working on gathering
+historical data as well. So it may be a lot easier to run this analysis on other
+states in the future!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Thanks&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;to Karen Hao, Ryan Ko, Andrew Zukoski, Shane Leese and Lakshman
+Sankar for reading drafts of this.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:5&#34;&gt;&lt;p&gt;Why 1996? Somewhat arbitrary, although it gives us context from the last
+two party shifts in the presidency (Bush in &amp;lsquo;00 and Obama in &amp;lsquo;08). Also, the
+Pennsylvania state website only hosts results since 2000, so I had to get
+creative in my google searches. Finally, I hope one day to run this analysis
+for other states, and the farther I go back, the more data I&amp;rsquo;d need to
+format and parse to analyze other states (where I can even get it at
+all). Call me lazy.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:5&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+
+&lt;li id=&#34;fn:6&#34;&gt;&lt;p&gt;As mentioned before, 1996 is missing when we consider registration data
+because I couldn&amp;rsquo;t find it at the county level.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:6&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An examination of 2016 Election Results in Pennsylvania</title>
+      <link>https://owenderby.com/blog/election_2016_pa_p1/</link>
+      <pubDate>Thu, 06 Apr 2017 13:33:37 -0800</pubDate>
+      
+      <guid>https://owenderby.com/blog/election_2016_pa_p1/</guid>
+      <description>
+
+&lt;p&gt;Like many, the election this past November is still on my mind. While I&amp;rsquo;ve
+accepted that I&amp;rsquo;ll never fully know &lt;em&gt;why&lt;/em&gt; Trump won, I&amp;rsquo;ve remained interested in
+&lt;em&gt;how&lt;/em&gt; he won. As an engineer, I decided to tackle this question the only way I
+know how - by looking at the data. I chose to examine the election results and
+registration statistics from Pennsylvania as a small, tractable case study,
+that&amp;rsquo;s still interesting as a swing state and might be representative of larger
+trends.&lt;/p&gt;
+
+&lt;p&gt;The data bares two insights. First, this election is remarkable, not because
+Trump won, but because of how he won. In fact, Trump and his team had to do a
+lot of things well to pull out a win in Pennsylvania. Trump outperformed Mitt
+Romney (the Republican presidential candidate in 2012) by a wider margin than
+Obama did over his predecessor (Kerry) in 2008. That is, &lt;strong&gt;Trump swung more
+votes in 2016 than Obama did in 2008&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Second, that a Republican won Pennsylvania this year is only remarkable when
+compared to Obama&amp;rsquo;s win in 2008. We often look at the 2008 election as the
+obvious comparison for this election, forgetting what a remarkable election that
+was itself. It turns out that when we look at the surrounding presidential
+elections, we see that &lt;strong&gt;2016 was NOT an anomaly, but 2008 was&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have broken my analysis and results into two parts. The first part (the
+remainder of this post) focuses on the 2016 results and how Trump won, while
+the &lt;a href=&#34;https://owenderby.com/blog/election_2016_pa_p2/&#34; target=&#34;_blank&#34;&gt;second part&lt;/a&gt; examines previous
+elections, highlighting different trends that help put this election into
+context.&lt;/p&gt;
+
+&lt;h2 id=&#34;part-one-how-trump-won&#34;&gt;Part One: How Trump Won&lt;/h2&gt;
+
+&lt;p&gt;I was surprised to see just how much he improved over Romney to pull out this
+win. Nevertheless, this was a close race. Trump won the popular vote by a mere
+44,292 votes (less than 1% of all votes cast). In contrast, Obama won
+Pennsylvania in 2012 by 312,501 votes (5.45%) and by 620,319 votes (10.33%)
+in 2008. And yet, if you look at the map of election results by county presented
+in Figure 1, you would be forgiven for wondering how the election was so close,
+given how many counties are red (Trump won 56 counties to Clinton&amp;rsquo;s 11).&lt;/p&gt;
+
+&lt;figure  style=&#34;width:75%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/results_map_pa_16.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/results_map_pa_16.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 1. Map of 2016
+election results by county. Counties are colored according to their normalized
+marginal votes. Cross-hatches indicate counties which Obama won in &amp;lsquo;12 that
+&amp;lsquo;flipped&amp;rsquo; to Trump in &amp;lsquo;16. Dot-hatches indicate the reverse
+(Romney -&amp;gt; Clinton).&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The problem with this map is that it obscures the effect of the absolute
+magnitude of the results across counties. Because Pennsylvania (like most
+states) decides its electoral college by popular vote across the entire state,
+it&amp;rsquo;s the total number of votes each candidate receives that matters, not how
+many counties they win. Many of the counties which Trump won have dramatically
+smaller populations, and thus contribute less towards the popular vote. Indeed,
+in 2016, Philadelphia county cast 707,631 votes, which comprised more votes cast
+than the 35 smallest counties combined (more than half of Pennsylvania&amp;rsquo;s 67
+counties!).&lt;/p&gt;
+
+&lt;p&gt;Figure 2 attempts to better illustrate the impact different counties have on
+each candidate&amp;rsquo;s overall outcome, by stacking the marginal votes for each
+candidate side-by-side.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nomenclature:&lt;/strong&gt; Throughout this post, I will refer to the &lt;strong&gt;&lt;em&gt;marginal
+votes&lt;/em&gt;&lt;/strong&gt; of a county. This is simply the difference between votes cast for the
+Republican and the Democrat candidates. By convention, this value is positive
+when the Republican gained more votes. Oftentimes, as in Figure 1, it is
+useful to normalize the marginal votes for each county, dividing by the total
+number of votes cast in that county in that election; I will refer to this as
+&lt;strong&gt;&lt;em&gt;normalized marginal votes&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/results_marginal_votes_barh_pa_12-16.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/results_marginal_votes_barh_pa_12-16.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 2. Stacked bar chart of county marginal votes in 2012 (top) and 2016
+(bottom), grouped by winning candidate in that county. Each bar-section is a
+county, with width equal to the marginal votes and colored according to
+normalized marginal votes (same as in Fig 1). Sections within each stack are
+ordered by normalized marginal votes.&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Now that we&amp;rsquo;re reflecting the absolute impact of each county, the race appears
+much closer. Note how clearly this figure illustrates the outsized
+influence Philadelphia county has, which appears as the largest blue
+bar. Also note how Clinton won the lion&amp;rsquo;s share of her marginal votes from just
+4 counties, while Trump&amp;rsquo;s marginal votes were more evenly distributed across the
+majority of the counties he won.&lt;/p&gt;
+
+&lt;p&gt;Most importantly, notice how the two elections compare. While Clinton garnered
+nearly as many marginal votes as Obama did in &amp;lsquo;12 (she was short by 3,728
+votes), Trump earned 73.5% more than Romney (Trump gained 353,065 additional
+votes), and 40,564 more than Obama did in &amp;lsquo;12. And Trump won these additional
+votes from nearly the same counties as Romney (only a net of 2 counties flipped
+Republican from &amp;lsquo;12 to &amp;lsquo;16, as Figure 1 showed). To put that in perspective, in
+2008 Obama earned only 45.2% more marginal votes than Kerry did in &amp;lsquo;04 (291,836
+additional marginal votes) and flipped a net of 6 counties.&lt;/p&gt;
+
+&lt;!---
+To put that in perspective, Figure 3 presents the same chart, but for
+2004-2008. Here, we see Obama in &#39;08 earned only 45.2% more marginal votes than
+Kerry (291,836 additional marginal votes).
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/results_marginal_votes_barh_pa_04-08.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/results_marginal_votes_barh_pa_04-08.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 2. Stacked bar chart of county marginal votes in 2012 (top) and 2016
+(bottom), grouped by winning candidate in that county. Each bar-section is a
+county, with width equal to the marginal votes and colored according to
+normalized marginal votes (same as in Fig 1). Sections within each stack are
+ordered by normalized marginal votes.&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+!---&gt;
+
+&lt;p&gt;In this respect, Trump was able to swing more votes (when compared to his
+predecessor) than Obama did in 2008. This is a remarkable fact. I wanted to know
+where these votes came from - how did Trump achieve this feat? To better
+understand this, I examined various theories. These are presented next. For each
+theory, I discuss what I found in the data to support or refute it, and
+postulate how many of Trump&amp;rsquo;s additional 353,065 marginal votes it could
+explain. All comparisons are with 2012 results.&lt;/p&gt;
+
+&lt;h2 id=&#34;republicans-had-increased-representation&#34;&gt;Republicans had Increased Representation&lt;/h2&gt;
+
+&lt;p&gt;Probably the most credible theory is that Republican voters had a larger
+presence in this election. This would be achieved through two different
+mechanisms. They could have turned out to vote in higher numbers
+(relative to Democrats) than in previous years. We would also see a higher
+Republican representation in the results if the relative number of registered
+Republican voters increased since 2012.&lt;/p&gt;
+
+&lt;p&gt;We can&amp;rsquo;t directly determine turnout rates by party without looking at exit poll
+data, which I don&amp;rsquo;t have access to. However, we can compute overall turnout for
+each county (as total votes cast over total registered voters&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;) for each
+election year. Figure 3 shows how overall turnout changed from 2012
+to 2016. From this, we can see that in counties where Trump won the turnout was
+on average (the red line in the boxplots) about 3% higher than those where
+Clinton won. In all, there was a net increase of 381,380 votes cast across the
+state in 2016.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/dturnout_16.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/dturnout_16.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 3. Map (left)
+and &lt;a href=&#34;https://en.wikipedia.org/wiki/Box_plot&#34; target=&#34;_blank&#34;&gt;Tukey boxplots&lt;/a&gt; (right) of the
+distribution of the difference in turnout (2016-2012) in each county. The hatched
+counties on the map are the counties which Clinton won in 2016. For the
+boxplots, the counties are grouped by the winning candidate, so each county is
+only included in one boxplot or the other (not both).&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Now, we want to know how many additional marginal votes these extra voters
+contributed to Trump. For simplicity, we&amp;rsquo;ll assume that all votes are cast
+according to the observed distributions for each county, as reported in Figure
+1&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. In other words, we assume that these extra voters voted similarly to the
+rest of their peers in their county. Using this assumption, we conclude that
+Trump gained about 65,000 marginal votes from these extra voters.&lt;/p&gt;
+
+&lt;p&gt;Another way to increase representation of Republican voters in the result is to
+increase the number of registered Republican voters &lt;em&gt;relative&lt;/em&gt; to the number of
+registered Democrat voters. Interestingly, this can happen through three
+distinct mechanisms - new voters can register as Republican, registered
+Democrats could have switched parties, or registered Democrats are
+un-registered. For now, we&amp;rsquo;ll only look at the overall changes to
+registrations -
+in
+&lt;a href=&#34;https://owenderby.com/blog/election_2016_pa_p2/#historical-registration-data&#34; target=&#34;_blank&#34;&gt;Part 2&lt;/a&gt;,
+we&amp;rsquo;ll dig deeper into these details.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nomenclature:&lt;/strong&gt; The &lt;strong&gt;&lt;em&gt;relative Republican registrations&lt;/em&gt;&lt;/strong&gt; is a normalized
+measure of how the registration statistics breaks down between Republicans and
+Democrats for a given election year. This is computed as the difference
+between number of registered Republicans and registered Democrats, divided the
+total number of registered voters. Like marginal votes, this value is positive
+when there are more Republicans registered than Democrats.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Figure 4 examines how the relative Republican registrations changed between 2016
+and 2012. Note that, because Figure 4 is concerned with the delta in relative
+registrations between elections, a positive value only means that there was a
+net increase in the number of Republicans registered in 2016; there may still be
+more registered Democrats than Republicans in a given county as a result of a
+positive difference.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/dRD_16.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/dRD_16.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 4. Map (left)
+and &lt;a href=&#34;https://en.wikipedia.org/wiki/Box_plot&#34; target=&#34;_blank&#34;&gt;Tukey boxplots&lt;/a&gt; (right) of the
+distribution of the change in relative Republican registrations in each
+county between 2016 and 2012. On the map, the counties with hatches are the
+counties which Clinton won in 2016. For the boxplots, the counties are grouped
+by the winning candidate, so each county is only included in one boxplot or the
+other (not both).&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;As Figure 4 shows, counties Trump won saw an average 6% increase in relative
+Republican registrations over counties Clinton won. If we make the same
+assumption as before, these additional registered voters would have contributed
+approximately 160,000 extra marginal votes for Trump.&lt;/p&gt;
+
+&lt;p&gt;Taken together, increased Republican turnout and registrations across the state
+seem to account for approximately 64% of of Trump&amp;rsquo;s extra marginal votes. Of
+course, that assumes the two phenomena are independent. In reality increased
+turnout is likely related to increased net Republican registrations, and so
+their combined total is likely reduced (due to double-counting). Even so, it&amp;rsquo;s
+clear that increased Republican representation only explains a portion of
+Trump&amp;rsquo;s victory. Some other factors must have been at play in this election.&lt;/p&gt;
+
+&lt;h2 id=&#34;independent-candidates-and-disillusioned-democrats&#34;&gt;Independent Candidates and Disillusioned Democrats&lt;/h2&gt;
+
+&lt;p&gt;The other common theory I&amp;rsquo;ve heard is that many Democrats were disillusioned
+with Clinton (including so-called &amp;ldquo;Bernie Bros&amp;rdquo;). The theory holds that these
+voters opted to vote for an independent candidate instead of along party lines,
+or simply didn&amp;rsquo;t turn out to vote at all, allowing Trump to win a historically
+&amp;lsquo;blue&amp;rsquo; state. There are three separate phenomena to consider here.&lt;/p&gt;
+
+&lt;p&gt;First, we might consider the possibility of a lower turnout by
+Democrats. However, Figure 3 shows that voter turnout increased in nearly all
+counties. So it&amp;rsquo;s unlikely that more Democrats stayed home than in previous
+years.&lt;/p&gt;
+
+&lt;p&gt;Second, we consider the &amp;ldquo;flipped&amp;rdquo; counties as potential places where
+disillusioned Democrats had a direct impact. From Figure 1, we see that only 3
+counties flipped Democrat -&amp;gt; Republican&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Let&amp;rsquo;s attribute those losses
+entirely to Democrats not voting for Clinton. Combined, these 3 counties might
+explain about 65,000 of the additional marginal votes Trump gained over Romney.&lt;/p&gt;
+
+&lt;p&gt;Finally, we can see if many Democrat voters opted to vote for independent
+candidates rather than Clinton in this election. If so, we should see an
+increase in votes cast for independent candidates in counties where Clinton
+received fewer votes than Obama did. This would manifest as a negative
+correlation in Figure 4. Note that here we are looking at changes in the
+percentage of votes for a particular party, not marginal votes. So a negative
+value here simply means a decrease in votes received when compared with 2012, but
+doesn&amp;rsquo;t imply anything about where those votes went.&lt;/p&gt;
+
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/election_16/pa/dIV_by_dDems_16.png&#34; target=&#34;_blank&#34;&gt;
+      &lt;img src=&#34;https://owenderby.com/img/election_16/pa/dIV_by_dDems_16.png&#34; width=&#34;100%&#34;/&gt;
+    &lt;/a&gt;
+    
+    &lt;figcaption&gt;
+      
+      &lt;p&gt;
+        &lt;p&gt;Fig 4. Plot of change
+from 2012 to 2016 in votes cast for: (x-axis) the Democrat candidate vs (y-axis)
+all independent candidates. Values are reported as a percentage of all votes
+cast in each county. The color of each marker indicates which party won that
+county in 2016.&lt;/p&gt;
+
+      &lt;/p&gt;
+      
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;However, Figure 4 doesn&amp;rsquo;t confirm this theory. It appears that votes for
+independent candidates rose around 2% in 2016 across all counties. Further, we
+see a slightly positive correlation. So, it appears that the opposite of what
+this theory predicts is observed - it is in counties where Clinton did better
+than Obama that we see the largest increases in the percentage of votes cast for
+independent candidates.&lt;/p&gt;
+
+&lt;p&gt;That said, let&amp;rsquo;s suppose that these additional votes for independent candidates
+did come exclusively from disillusioned democrats who otherwise would have voted
+for Clinton. Combined, that comprises approximately 140,000 additional marginal
+votes for Trump.&lt;/p&gt;
+
+&lt;p&gt;Although a popular refrain amongst Clinton-supporters in the aftermath of the
+election, it appears that disenfranchised Democrats didn&amp;rsquo;t help Trump as much as
+you might be led to believe. Taken together, their (in)actions contributed up to
+48% of Trump&amp;rsquo;s extra marginal votes, and that is an upper bound.&lt;/p&gt;
+
+&lt;h2 id=&#34;registered-democrats-voted-for-trump&#34;&gt;Registered Democrats voted for Trump&lt;/h2&gt;
+
+&lt;p&gt;There&amp;rsquo;s one last explanation for what happened - that registered Democrats
+decided to vote for Trump. We can&amp;rsquo;t measure this directly from the data we have;
+we would need exit poll data. However, when we compare the count of votes for
+Trump against the number of registered Republican voters, we find that in 14 of
+the counties Trump won (remember, he won 56 counties) there were more votes cast
+for Trump than registered Republicans! And that is assuming that every
+registered Republican in those counties voted. Even so, that adds up to at least
+56,000 votes for Trump that couldn&amp;rsquo;t have come from any registered Republicans,
+representing at least 15% of the extra marginal votes he gained over
+Romney. And, given that it is unlikely turnout was 100% for republican voters,
+the total number of Democrats voting for Trump was likely much higher.&lt;/p&gt;
+
+&lt;h2 id=&#34;it-s-complicated&#34;&gt;It&amp;rsquo;s Complicated&lt;/h2&gt;
+
+&lt;p&gt;Trump&amp;rsquo;s win in Pennsylvania came as a surprise to me and many of my peers. The
+knee-jerk reaction from my liberal media bubble was that Clinton didn&amp;rsquo;t do
+enough and Trump got lucky. However, the truth is that Trump won 40,564 more
+marginal votes than Obama did in 2012 and swung more marginal votes (when
+compared to Romney) than Obama did in 2008 (when compared to Kerry).&lt;/p&gt;
+
+&lt;p&gt;Further, while we often talk about how Clinton lost the election, we tend to
+oversimplify the reasons. In reality, it&amp;rsquo;s far more complex than any single
+factor can explain. As I&amp;rsquo;ve shown, there&amp;rsquo;s evidence that more Republicans
+registered and voted than in 2012, the few counties he flipped helped him win,
+independent candidates likely didn&amp;rsquo;t affect the outcome, and many registered
+democrats voted for Trump. Although I tried to quantify to what extent each of
+these factors contributed to Trump&amp;rsquo;s victory, the more important point is that
+none of these alone account for Trump&amp;rsquo;s win. It was the result of a combination
+of these factors, likely achieved through coordinated actions by Trump&amp;rsquo;s team.&lt;/p&gt;
+
+&lt;p&gt;So far, I&amp;rsquo;ve only presented various theories explaining &lt;em&gt;how&lt;/em&gt; Trump won. While
+discussing &lt;em&gt;why&lt;/em&gt; he won would be equally as interesting, it&amp;rsquo;s also far more
+subjective and qualitative, and draws on expertise in areas of demographics and
+political theory that I utterly lack. So I&amp;rsquo;ll leave that discussion to others.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve enjoyed this post, be sure to check
+out &lt;a href=&#34;https://owenderby.com/blog/election_2016_pa_p2/&#34; target=&#34;_blank&#34;&gt;Part 2&lt;/a&gt;, where I dive into the
+data from the previous presidential elections in Pennsylvania and try to put
+this election in a historical context. And, if you find an issue or want to let
+me know what you think of this writeup, please feel free to leave a comment
+below or &lt;a href=&#34;mailto:me@owenderby.com&#34; target=&#34;_blank&#34;&gt;contact me&lt;/a&gt; directly.&lt;/p&gt;
+
+&lt;p&gt;Finally, as mentioned before, all data, results and discussions pertain
+exclusively to presidential elections in Pennsylvania state. Someday, I&amp;rsquo;d like
+to extend this analysis to other states, but that&amp;rsquo;s limited by time and the
+availability of county-level data. If anyone wants to explore the data further
+themselves, I&amp;rsquo;ve made the notebook and data used available
+on &lt;a href=&#34;https://github.com/oderby/elections_2016&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;. I collected the data by
+manually scraping and formatting government and public repositories; source
+links and methodology can also be found on Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Thanks&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;to Karen Hao, Ryan Ko, Andrew Zukoski, Shane Leese and Lakshman
+Sankar for reading drafts of this.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;&lt;p&gt;A more rigorous approach for computing voter turnout is to use voting age
+population (VAP) or voting eligible population (VEP) as the denominator. VAP
+is readily available from the US Census, and so is a popular choice, but has
+many flaws, especially when comparing across states as different states
+place different restrictions on who is actually eligible to vote within the
+VAP. VEP is a fairly recent idea, and is meant to account for all the
+differences in states and thus be more readily comparable between
+them. However, it relies on data that is not always easy to find (or even
+public at all) at the county level, and is thus nearly impossible for me to
+use in this analysis. Michael McDonald has good set of posts
+on &lt;a href=&#34;http://www.electproject.org/home/voter-turnout/faq/vap&#34; target=&#34;_blank&#34;&gt;VAP&lt;/a&gt;
+vs &lt;a href=&#34;http://www.electproject.org/home/voter-turnout/faq/sold&#34; target=&#34;_blank&#34;&gt;VEP&lt;/a&gt; and
+their
+&lt;a href=&#34;http://www.electproject.org/home/voter-turnout/faq/vap-v-vap&#34; target=&#34;_blank&#34;&gt;differences&lt;/a&gt;
+and
+why
+&lt;a href=&#34;http://www.electproject.org/home/voter-turnout/faq/reg&#34; target=&#34;_blank&#34;&gt;using registration is not ideal&lt;/a&gt;. In
+all honesty, the biggest flaw with using RV instead of VAP in this analysis
+is that I can&amp;rsquo;t separate changes in registration due to population
+growth/change vs political views shifting.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+
+&lt;li id=&#34;fn:2&#34;&gt;&lt;p&gt;We need to make some assumption here, because it&amp;rsquo;s impossible to know the
+truth, as that would involve asking every single person that voted, if they
+voted previously and how they voted this year. Assuming all voters voted
+according to the same distribution is a simplifying, yet reasonable,
+assumption here.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+
+&lt;li id=&#34;fn:3&#34;&gt;&lt;p&gt;And 1 county flipped Republican -&amp;gt; Democrat, counteracting the other 3
+somewhat, but we&amp;rsquo;ll ignore that here.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Hosting my Personal Website (for Free!)</title>
@@ -163,8 +935,8 @@ know. So I borrowed an old Nikon D40 from a friend and sort of just dove
 in. Turns out, it&amp;rsquo;s not very difficult to go from n00b to novice, and it&amp;rsquo;s even
 easier to take a lot of photos&amp;hellip;but that&amp;rsquo;s a story for another day.&lt;/p&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/pano_sample.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/pano_sample.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/pano_sample.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -214,8 +986,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
 &lt;div class=&#39;row&#39;&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/a.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/a.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/a.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -223,8 +995,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
     &lt;/div&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/b.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/b.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/b.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -232,8 +1004,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
     &lt;/div&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/c.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/c.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/c.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -241,8 +1013,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
     &lt;/div&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/d.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/d.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/d.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -328,8 +1100,8 @@ very subtle change to the panorama - if instead it turns your panorama into
 an &amp;rsquo;S&amp;rsquo;, Hugin probably has your lens information or focal length wrong&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/int_pano_hugin.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/int_pano_hugin.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/int_pano_hugin.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -368,8 +1140,8 @@ name and place to save resulting panorama.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/flat_pano.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/flat_pano.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/flat_pano.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -493,8 +1265,8 @@ name and place to save resulting panorama.&lt;/li&gt;
 
 &lt;p&gt;This should result in something that looks like the following:&lt;/p&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/flat_photosphere.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/flat_photosphere.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/flat_photosphere.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     

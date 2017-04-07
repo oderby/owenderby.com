@@ -23,8 +23,8 @@ know. So I borrowed an old Nikon D40 from a friend and sort of just dove
 in. Turns out, it&amp;rsquo;s not very difficult to go from n00b to novice, and it&amp;rsquo;s even
 easier to take a lot of photos&amp;hellip;but that&amp;rsquo;s a story for another day.&lt;/p&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/pano_sample.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/pano_sample.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/pano_sample.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -74,8 +74,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
 &lt;div class=&#39;row&#39;&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/a.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/a.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/a.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -83,8 +83,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
     &lt;/div&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/b.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/b.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/b.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -92,8 +92,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
     &lt;/div&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/c.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/c.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/c.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -101,8 +101,8 @@ using entirely open source tools. This is definitely possible using Photoshop
 
     &lt;/div&gt;
     &lt;div class=&#39;col-xs-6 col-sm-3&#39;&gt;
-        &lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/d.JPG&#34;&gt;
+        &lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/d.JPG&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/d.JPG&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -188,8 +188,8 @@ very subtle change to the panorama - if instead it turns your panorama into
 an &amp;rsquo;S&amp;rsquo;, Hugin probably has your lens information or focal length wrong&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/int_pano_hugin.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/int_pano_hugin.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/int_pano_hugin.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -228,8 +228,8 @@ name and place to save resulting panorama.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/flat_pano.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/flat_pano.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/flat_pano.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
@@ -353,8 +353,8 @@ name and place to save resulting panorama.&lt;/li&gt;
 
 &lt;p&gt;This should result in something that looks like the following:&lt;/p&gt;
 
-&lt;figure &gt;
-    &lt;a href=&#34;https://owenderby.com/img/panos/flat_photosphere.jpg&#34;&gt;
+&lt;figure  style=&#34;width:100%&#34; &gt;
+    &lt;a href=&#34;https://owenderby.com/img/panos/flat_photosphere.jpg&#34; target=&#34;_blank&#34;&gt;
       &lt;img src=&#34;https://owenderby.com/img/panos/flat_photosphere.jpg&#34; width=&#34;100%&#34;/&gt;
     &lt;/a&gt;
     
