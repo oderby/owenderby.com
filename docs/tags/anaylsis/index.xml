@@ -353,13 +353,12 @@ because I couldn&amp;rsquo;t find it at the county level.&lt;/p&gt;
       <guid>https://owenderby.com/blog/election_2016_pa_p1/</guid>
       <description>
 
-&lt;p&gt;Like many, the election this past November is still on my mind. While I&amp;rsquo;ve
-accepted that I&amp;rsquo;ll never fully know &lt;em&gt;why&lt;/em&gt; Trump won, I&amp;rsquo;ve remained interested in
-&lt;em&gt;how&lt;/em&gt; he won. As an engineer, I decided to tackle this question the only way I
-know how - by looking at the data. I chose to examine the election results and
-registration statistics from Pennsylvania as a small, tractable case study,
-that&amp;rsquo;s still interesting as a swing state and might be representative of larger
-trends.&lt;/p&gt;
+&lt;p&gt;Like many, I find myself still pondering this election. While I&amp;rsquo;ve accepted that
+I&amp;rsquo;ll never fully know &lt;em&gt;why&lt;/em&gt; Trump won, I&amp;rsquo;ve remained interested in &lt;em&gt;how&lt;/em&gt; he
+won. As an engineer, I decided to tackle this question the only way I know how -
+by looking at the data. I chose to examine the election results and registration
+statistics from Pennsylvania as a small, tractable case study, that&amp;rsquo;s still
+interesting as a swing state and might be representative of larger trends.&lt;/p&gt;
 
 &lt;p&gt;The data bares two insights. First, this election is remarkable, not because
 Trump won, but because of how he won. In fact, Trump and his team had to do a

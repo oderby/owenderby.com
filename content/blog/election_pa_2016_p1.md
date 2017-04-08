@@ -8,13 +8,12 @@ image_twitter = "img/election_16/pa/p1_image_twitter.png"
 image_fb = "img/election_16/pa/p1_image_fb.png"
 +++
 
-Like many, the election this past November is still on my mind. While I've
-accepted that I'll never fully know *why* Trump won, I've remained interested in
-*how* he won. As an engineer, I decided to tackle this question the only way I
-know how - by looking at the data. I chose to examine the election results and
-registration statistics from Pennsylvania as a small, tractable case study,
-that's still interesting as a swing state and might be representative of larger
-trends.
+Like many, I find myself still pondering this election. While I've accepted that
+I'll never fully know *why* Trump won, I've remained interested in *how* he
+won. As an engineer, I decided to tackle this question the only way I know how -
+by looking at the data. I chose to examine the election results and registration
+statistics from Pennsylvania as a small, tractable case study, that's still
+interesting as a swing state and might be representative of larger trends.
 
 The data bares two insights. First, this election is remarkable, not because
 Trump won, but because of how he won. In fact, Trump and his team had to do a
