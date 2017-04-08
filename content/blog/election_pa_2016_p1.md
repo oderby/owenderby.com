@@ -298,7 +298,7 @@ on [Github](https://github.com/oderby/elections_2016). I collected the data by
 manually scraping and formatting government and public repositories; source
 links and methodology can also be found on Github.
 
-***Thanks*** *to Karen Hao, Ryan Ko, Andrew Zukoski, Shane Leese and Lakshman
+***Thanks*** *to [Karen Hao](https://www.karendhao.com), Ryan Ko, Andrew Zukoski, Shane Leese and Lakshman
 Sankar for reading drafts of this.*
 
 [^1]: A more rigorous approach for computing voter turnout is to use voting age
