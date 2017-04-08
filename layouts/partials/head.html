@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="{{ .Site.Author }}" />
-    {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+    <meta name="author" content="{{ .Site.Params.author }}" />
+    {{ partial "social_tags" . }}
     <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}img/favicon.ico">
     <title>
     {{- $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" -}}
@@ -15,6 +15,12 @@
         {{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Title -}} {{- end -}}
     {{- end -}}
     </title>
+    {{ if .IsPage }}
+        <meta name="description" content="{{ .Description }}" />
+    {{ else }}
+        <meta name="description" content="{{ .Site.Params.description }}" />
+    {{ end }}
+
     {{ .Hugo.Generator }}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >

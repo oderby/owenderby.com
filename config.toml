@@ -18,6 +18,7 @@ ignoreFiles = ["LICENSE.md"]
 
 [params]
   avatar = "profile.jpg"
+  avatar_fb = "profile_fb.jpg"
   author = "Owen Derby"
   description = "My personal soap box."
 

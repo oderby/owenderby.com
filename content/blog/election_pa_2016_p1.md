@@ -1,9 +1,11 @@
 +++
 tags = ["anaylsis", "politics"]
 title = "An examination of 2016 Election Results in Pennsylvania"
-description = "Part 1/2 analyzing 2016 and past presidential elections in Pennsylvania state"
+description = "Analyzing the data from Pennsylvania to see how Donald Trump won this election."
 slug = "election_2016_pa_p1"
 date = "2017-04-06T13:33:37-08:00"
+image_twitter = "img/election_16/pa/p1_image_twitter.png"
+image_fb = "img/election_16/pa/p1_image_fb.png"
 +++
 
 Like many, the election this past November is still on my mind. While I've

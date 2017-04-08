@@ -1,3 +1,7 @@
+.avatar {
+    width: 190px;
+}
+
 blockquote {
     color: #757575;
 }
@@ -121,32 +125,20 @@ div.right {
 }
 
 .multi-column li {
-/*     list-style-position: inside; */
     margin-left: 1em;
 }
 
-.inline {
-/*     display: inline; */
-}
-
 div.resume .avatar {
-/*     margin-bottom: 15px; */
     padding-top: 0px;
     text-align:center;
 }
 
 div.resume .avatar img {
-/*     height: 160px; */
     margin-bottom: 15px;
 }
 
 div.resume > header {
-/*     text-align: center; */
     margin-bottom: 30px;
     margin-top: 20px;
     text-align: justify;
-}
-
-div.resume li {
-/*     text-align: justify; */
 }

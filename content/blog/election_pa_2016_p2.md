@@ -1,9 +1,11 @@
 +++
 tags = ["anaylsis", "politics"]
 title = "An examination of 2016 Election Results in Pennsylvania - Part 2"
-description = "Part 2/2 analyzing 2016 and past presidential elections in Pennsylvania state"
+description = "Analyzing data from past elections in Pennsylvania to put 2016 in perspective."
 slug = "election_2016_pa_p2"
 date = "2017-04-07T14:10:12-08:00"
+image_twitter = "img/election_16/pa/p1_image_twitter.png"
+image_fb = "img/election_16/pa/p1_image_fb.png"
 +++
 
 *This is the second post in a two-part series, examining presidential election
