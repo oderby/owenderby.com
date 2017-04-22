@@ -1,200 +1,208 @@
 {
-    "basics": {
-        "name": "Owen C. Derby",
-        "website": "https://owenderby.com",
-        "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building a new sub-system, I'm adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I also care about having a positive impact on our planet and society. Currently, I'm helping build and run [5calls.org](https://5calls.org), but I am always looking for other ways to get involved.\n\nI'm actively seeking new full-time engineering opportunities at this time. If you have a role you'd like to discuss, please [get in touch](mailto:me@owenderby.com). While I'm most passionate about having an impact on climate change, I'm interested in any opportunity to have an impact outside this little tech bubble which I occupy."
+  "basics": {
+    "name": "Owen C. Derby",
+    "website": "owenderby.com",
+    "location": {
+      "city": "San Francisco",
+      "region": "CA"
     },
-    "work": [
+    "about": "I am a self-motivated, versatile software engineer with strong product sensibilities. I care about having a positive impact on our planet and society. I am seeking opportunities to work for a company leveraging technology to tackle climate change or other equally important challenges to today's world.",
+    "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building new services, I'm adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling, taking photos, and playing a variety of games with friends (so long as it involves more thinking than randomness). I also care about having a positive impact on our planet and society. Currently, I'm helping build and run [5calls.org](https://5calls.org), but I am always looking for other ways to get involved.\n\nI'm actively seeking new full-time engineering opportunities at this time. If you have a role you'd like to discuss, please [get in touch](mailto:me@owenderby.com). While I'm most passionate about having an impact on climate change, I'm interested in any opportunity to have an impact outside this little tech bubble which I occupy."
+  },
+  "work": [
+    {
+      "company": "Flux Factory, Inc.",
+      "website": "https://flux.io",
+      "positions": [
         {
-            "company": "Flux Factory, Inc.",
-            "website": "https://flux.io",
-            "positions": [
-                {
-                    "title": "Technical Product Manager",
-                    "startDate": "2015-05-01",
-                    "endDate": "2016-08-17",
-                    "highlights": [
-                        "Led the company through a 4 month pivot to a new SASS data-interchange product for computational designers.",
-                        "Established KPIs for the product, a roadmap to achieve them and oversaw its implementation by development teams.",
-                        "Analyzed user behavior to prioritize new features and support sales and marketing in targeting customers."
-                    ]
-                },
-                {
-                    "title": "Software Engineer",
-                    "startDate": "2013-07-01",
-                    "endDate": "2015-05-01",
-                    "highlights": [
-                        "Designed and built backend services in Go and associated SQL databases for user accounts, data and Stripe payments.",
-                        "Created pipelines for collecting, cleaning, and combining GIS and zoning code data and Angular components for displaying the result in the [Metro](https://blog.flux.io/flux-metro-what-we-learned-11fc82b6de03) product.",
-                        "Implemented logical subsystems for a 'building configurator', while helping re-scope the project to deliver a smaller set of features on time."
-                    ]
-                }
-            ]
+          "title": "Technical Product Manager",
+          "startDate": "2015-05-01",
+          "endDate": "2016-08-17",
+          "highlights": [
+            "Led company through a 4 month pivot to a new SAAS data-interchange product for computational designers.",
+            "Established KPIs for the product, a roadmap to achieve them and oversaw its implementation by development teams, resulting in adoption by thousands of users from a niche market in 6 months.",
+            "Analyzed user behavior to prioritize new features and support sales and marketing in targeting customers."
+          ]
         },
         {
-            "company": "MIT CSAIL, ALFA Group",
-            "website": "https://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/index.php",
-            "positions": [
-                {
-                    "title": "Research Assistant",
-                    "startDate": "2012-06-01",
-                    "endDate": "2013-05-31",
-                    "highlights": [
-                        "Developed [FlexGP](http://hdl.handle.net/1721.1/85216) – a distributed, heterogeneous genetic programming system for machine learning.",
-                        "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation."
-                    ]
-                },
-                {
-                    "title": "Undergraduate Research Assistant",
-                    "startDate": "2011-02-01",
-                    "endDate": "2011-05-31",
-                    "highlights": [
-                        "Designed and implemented a simple, light-weight genetic programming library in Java."
-                    ]
-                }
-            ]
-        },
-        {
-            "company": "Jaybridge Robotics, Autonomous Agriculture Group",
-            "website": "http://www.jaybridge.com/",
-            "positions": [
-                {
-                    "title": "Software Engineering Intern",
-                    "startDate": "2011-05-01",
-                    "endDate": "2011-08-31",
-                    "highlights": [
-                        "Contributed to ongoing development of software control package for an autonomous farm tractor.",
-                        "Expanded regression tests to exercise new system features and to assess improvements in system performance."
-                    ]
-                }
-            ]
-        },
-        {
-            "company": "Mission Critical Technologies, Machine Learning and Controls Lab",
-            "positions": [
-                {
-                    "title": "MCT Intern at NASA Ames Research Center",
-                    "startDate": "2010-05-01",
-                    "endDate": "2010-08-31",
-                    "highlights": [
-                        "Expanded control software on lab test bed to incorporate acceleration measurements.",
-                        "Implemented a simple fault detection and isolation algorithm to demonstrate system capabilities."
-                    ]
-                }
-            ]
-        },
-        {
-            "company": "iRobot Corporation, iRobot 710 Warrior",
-            "positions": [
-                {
-                    "title": "Software Engineering Intern",
-                    "startDate": "2009-06-01",
-                    "endDate": "2009-08-31",
-                    "highlights": [
-                        "Programmed a component to setup streams with onboard A/V driver for remote control over radio.",
-                        "Designed and tested a logging application for real-time viewing and debugging of runtime data."
-                    ]
-                }
-            ]
+          "title": "Software Engineer",
+          "startDate": "2013-07-01",
+          "endDate": "2015-05-01",
+          "highlights": [
+            "Designed, built and deployed backend services in Go and associated SQL databases for user data, accounts and Stripe payments.",
+            "Created pipelines for collecting, cleaning, and combining GIS and zoning code data, and Angular components for displaying the result in the [Metro](https://blog.flux.io/flux-metro-what-we-learned-11fc82b6de03) product.",
+            "Implemented logical subsystems for a 'building configurator' application, while helping re-scope the project mid-contract to deliver a reduced set of features on time."
+          ]
         }
+      ]
+    },
+    {
+      "company": "MIT CSAIL, ALFA Group",
+      "website": "https://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/index.php",
+      "positions": [
+        {
+          "title": "Research Assistant",
+          "startDate": "2012-06-01",
+          "endDate": "2013-05-31",
+          "highlights": [
+            "Developed [FlexGP](http://hdl.handle.net/1721.1/85216) – a distributed, heterogeneous genetic programming system for machine learning.",
+            "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation.",
+            "Published 2 papers and presented my research at the preeminent conference for genetic and evolutionary computation."
+          ]
+        },
+        {
+          "title": "Undergraduate Research Assistant",
+          "startDate": "2011-02-01",
+          "endDate": "2011-05-31",
+          "highlights": [
+            "Designed and implemented a simple, light-weight genetic programming library in Java."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Jaybridge Robotics, Autonomous Agriculture Group",
+      "website": "http://www.jaybridge.com/",
+      "positions": [
+        {
+          "title": "Software Engineering Intern",
+          "startDate": "2011-05-01",
+          "endDate": "2011-08-31",
+          "highlights": [
+            "Contributed to ongoing development of software control package for an autonomous farm tractor.",
+            "Expanded regression tests to exercise new system features and to assess improvements in system performance."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Mission Critical Technologies, Machine Learning and Controls Lab",
+      "omit": true,
+      "positions": [
+        {
+          "title": "MCT Intern at NASA Ames Research Center",
+          "startDate": "2010-05-01",
+          "endDate": "2010-08-31",
+          "highlights": [
+            "Expanded control software on lab test bed to incorporate acceleration measurements.",
+            "Implemented a simple fault detection and isolation algorithm to demonstrate system capabilities."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "iRobot Corporation, iRobot 710 Warrior",
+      "omit": true,
+      "positions": [
+        {
+          "title": "Software Engineering Intern",
+          "startDate": "2009-06-01",
+          "endDate": "2009-08-31",
+          "highlights": [
+            "Programmed a component to setup streams with onboard A/V driver for remote control over radio.",
+            "Designed and tested a logging application for real-time viewing and debugging of runtime data."
+          ]
+        }
+      ]
+    }
 
-    ],
-    "_volunteer": [
+  ],
+  "_volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Massachusetts Institute of Technology",
+      "degrees": [
         {
-            "organization": "CoderDojo",
-            "position": "Teacher",
-            "website": "http://coderdojo.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Global movement of free coding clubs for young people.",
-            "highlights": [
-                "Awarded 'Teacher of the Month'"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Massachusetts Institute of Technology",
-            "degrees": [
-                {
-                    "area": "Computer Science",
-                    "studyType": "Masters of Engineering",
-                    "endDate": "2013-06-01",
-                    "gpa": "5.0"
-                },
-                {
-                    "area": "Computer Science and Engineering",
-                    "studyType": "Bachelors of Science",
-                    "endDate": "2012-06-01",
-                    "gpa": "4.7"
-                }
-            ],
-            "courses": ["Machine Learning", "Distributed Systems",
-                        "Computer Systems Security",
-                        "Performance Engineering of Software Systems",
-                        "Design and Analysis of Algorithms"]
-        }
-    ],
-    "_awards": [
-        {
-            "title": "Digital Compression Pioneer Award",
-            "date": "2014-11-01",
-            "awarder": "Techcrunch",
-            "summary": "There is no spoon."
-        }
-    ],
-    "publications": [
-        {
-            "name": "FlexGP: Cloud-Based Ensemble Learning with Genetic Programming for Large Regression Problems",
-            "publication": "Journal of Grid Computing",
-            "publisher": "Springer Netherlands",
-            "releaseDate": "2015",
-            "website": "https://dspace.mit.edu/handle/1721.1/103516",
-            "summary": "Describes FlexGP, the first Genetic Programming system to perform symbolic regression on large-scale datasets on the cloud via massive data-parallel ensemble learning."
+          "area": "Computer Science",
+          "studyType": "Masters of Engineering",
+          "endDate": "2013-06-01",
+          "gpa": "5.0"
         },
         {
-            "name": "Learning Regression Ensembles with Genetic Programming at Scale",
-            "publication": "Proceedings of GECCO",
-            "publisher": "ACM",
-            "releaseDate": "2013",
-            "website": "http://doi.acm.org/10.1145/2463372.2463506",
-            "summary": "Examines the challenge of producing ensembles of regression models for large datasets."
-        },
-        {
-            "name": "Cloud Driven Design of a Distributed Genetic Programming Platform",
-            "publication": "Proceedings of EvoApplications",
-            "publisher": "Springer Berlin Heidelberg",
-            "releaseDate": "2013",
-            "website": "http://dx.doi.org/10.1007/978-3-642-37192-9_51",
-            "summary": "Presents FlexGP, a distributed genetic programming (GP) system designed to efficiently run on the cloud."
+          "area": "Computer Science and Engineering",
+          "studyType": "Bachelors of Science",
+          "endDate": "2012-06-01",
+          "gpa": "4.7"
         }
-    ],
-    "skills": [
-        {
-            "name": "Programming Languages",
-            "keywords": ["Python", "JavaScript", "Go", "HTML/CSS", "Java", "C/C++"]
-        },
-        {
-            "name": "Software & Tools",
-            "keywords": ["git", "svn", "Jira", "gerrit", "Mixpanel/GA", "QGIS"]
-        },
-        {
-            "name": "Deployment & DBs",
-            "keywords": ["GCS", "AWS", "Docker", "MySQL", "MongoDB"]
-        }
-    ],
-    "_languages": [
-        {
-            "language": "English",
-            "fluency": "Native speaker"
-        }
-    ],
-    "interests": ["Board Games", "Ping Pong", "Cooking",
-                  "Exploring new cities", "Robotics", "Soccer" ],
-    "_references": [
-        {
-            "name": "Erlich Bachman",
-            "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-        }
-    ]
+      ],
+      "courses": ["Machine Learning", "Distributed Systems",
+                  "Computer Systems Security",
+                  "Performance Engineering of Software Systems",
+                  "Design and Analysis of Algorithms"]
+    }
+  ],
+  "_awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "FlexGP: Cloud-Based Ensemble Learning with Genetic Programming for Large Regression Problems",
+      "publication": "Journal of Grid Computing",
+      "publisher": "Springer Netherlands",
+      "releaseDate": "2015",
+      "website": "https://dspace.mit.edu/handle/1721.1/103516",
+      "summary": "Describes FlexGP, the first Genetic Programming system to perform symbolic regression on large-scale datasets on the cloud via massive data-parallel ensemble learning."
+    },
+    {
+      "name": "Learning Regression Ensembles with Genetic Programming at Scale",
+      "publication": "Proceedings of GECCO",
+      "publisher": "ACM",
+      "releaseDate": "2013",
+      "website": "http://doi.acm.org/10.1145/2463372.2463506",
+      "summary": "Examines the challenge of producing ensembles of regression models for large datasets."
+    },
+    {
+      "name": "Cloud Driven Design of a Distributed Genetic Programming Platform",
+      "publication": "Proceedings of EvoApplications",
+      "publisher": "Springer Berlin Heidelberg",
+      "releaseDate": "2013",
+      "website": "http://dx.doi.org/10.1007/978-3-642-37192-9_51",
+      "summary": "Presents FlexGP, a distributed genetic programming (GP) system designed to efficiently run on the cloud."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Python", "JavaScript", "Go", "HTML/CSS", "Java", "C/C++"]
+    },
+    {
+      "name": "Software & Tools",
+      "keywords": ["git", "svn", "Jira", "gerrit", "Mixpanel/GA", "QGIS"]
+    },
+    {
+      "name": "Deployment & DBs",
+      "keywords": ["GCS", "AWS", "Docker", "MySQL", "MongoDB"]
+    }
+  ],
+  "_languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": ["Board Games", "Ping Pong", "Cooking",
+                "Exploring new cities", "Robotics", "Soccer" ],
+  "_references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ]
 }
