@@ -142,3 +142,11 @@ div.resume > header {
     margin-top: 20px;
     text-align: justify;
 }
+
+div.resume .download {
+    padding-top: 12px;
+}
+
+div.resume .download a {
+    color: #000000;
+}
