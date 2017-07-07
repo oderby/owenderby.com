@@ -1,5 +1,4 @@
 body {
-  background: #EEEEEE;
   font: 12px 'Source Sans Pro', sans-serif;
   line-height: 1.4;
   margin-top: 20px;
@@ -182,6 +181,9 @@ tt {
 }
 
 @media print {
+  body {
+    background: #fff;
+  }
   #resume {
     margin: 0 auto;
     max-width: 600px;

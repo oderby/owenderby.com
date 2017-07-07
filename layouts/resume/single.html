@@ -37,7 +37,11 @@
               {{ range .positions }}
                 <div class="row">
                   <div class="col-xs-7"><h4>{{ .title }}</h4></div>
+                  {{ if isset . "endDate" }}
                   <div class="col-xs-5 right">{{ dateFormat "Jan 2006" .startDate }} — {{ dateFormat "Jan 2006" .endDate }}</div>
+                  {{ else }}
+                  <div class="col-xs-5 right">{{ dateFormat "Jan 2006" .startDate }} — Present</div>
+                  {{ end }}
                 </div>
                 {{ with .highlights }}
                   <div>

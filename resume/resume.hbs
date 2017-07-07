@@ -86,6 +86,7 @@
               </span>
             </div>
             {{#each positions}}
+            {{#unless omit}}
             {{#unless @first}}<div class='separator'></div>{{/unless}}
             <div>
               <span class='role'>{{title}}</span>
@@ -109,6 +110,7 @@
               </ul>
               {{/if}}
             </div>
+            {{/unless}}
             {{/each}}
           </div>
           {{/unless}}

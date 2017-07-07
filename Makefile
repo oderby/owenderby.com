@@ -1,18 +1,15 @@
-.PHONY: resume site serve build-resume
+.PHONY: resume site serve
 
-build-resume:
+resume:
 	go run resume/main.go
+	google-chrome --headless --disable-gpu --print-to-pdf file://`pwd`/resume/resume_web.html
+	mv output.pdf static/resume/resume.pdf
+	google-chrome --headless --disable-gpu --print-to-pdf file://`pwd`/resume/resume.html
+	mv output.pdf resume.pdf
 
-# TODO: find a clean way to automate this that produces nice pdf.
-resume: build-resume
-	google-chrome resume/resume.html
-	google-chrome resume/resume_web.html
-
-site:
-	cp resume/resume.pdf static/resume/resume.pdf
+site: resume
 	rm -rf docs/*
 	hugo -d docs
 
-serve:
-	cp resume/resume.pdf static/resume/resume.pdf
+serve: resume
 	hugo serve -D
