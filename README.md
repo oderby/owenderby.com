@@ -6,6 +6,12 @@ website can always be found at [https://owenderby.com](https://owenderby.com).
 
 I followed these tutorials ([1](http://www.moxie.io/post/static-websites-with-hugo-on-google-cloud-storage/) [2](https://gohugo.io/overview/quickstart/)) to get up and running with Hugo.
 
+# Building
+
+Copy [.env.sample](.env.sample) to .env and fill in phone number.
+
+Run `make resume` and preview resulting [web](static/resume/resume.pdf) (no phone #) and [private](resume.pdf) versions
+
 # Scratchspace
 
 ## Possible Themes:
@@ -15,7 +21,7 @@ I followed these tutorials ([1](http://www.moxie.io/post/static-websites-with-hu
 * http://themes.gohugo.io/theme/hugo-icarus/
 * http://themes.gohugo.io/theme/internet-weblog/
 
-## Useful tools (for future epansions)
+## Useful tools (for future expansions)
 
 * https://github.com/exif-js/exif-js/tree/master/example
 * https://github.com/bep/bepsays.com
@@ -32,6 +38,9 @@ I followed these tutorials ([1](http://www.moxie.io/post/static-websites-with-hu
 * Printable resume
 * Improve google analytics
 * Support 360° photospheres
+  * https://github.com/mrdoob/three.js/blob/dev/examples/webgl_panorama_equirectangular.html
+  * https://chris.orr.me.uk/photo-sphere-embedding-viewer-tiny-planet/
+  * https://github.com/kennydude/photosphere
 * cleaner format for blogs/ page
 * Favicon
 * Uglify/Minify code (mostly as an exercise, not because I care about the load
