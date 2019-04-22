@@ -82,7 +82,7 @@ li {
 }
 
 .sectionName {
-  width: 30px;
+  width: 0px;
   vertical-align: top;
   display: inline-block;
 }

@@ -30,7 +30,7 @@ ignoreFiles = ["LICENSE.md"]
   Github        = "oderby"
   Email         = "owen@owenderby.com"
   LinkedIn      = "oderby"
-  Twitter       = "ocderby"
+  # Twitter       = "ocderby"
   # Stackoverflow = "username"
 
 ## Main Menu
@@ -44,8 +44,3 @@ ignoreFiles = ["LICENSE.md"]
   identifier = "projects"
   weight = 200
   url = "/projects/"
-[[menu.main]]
-  name = "resume"
-  identifier = "resume"
-  weight = 300
-  url = "/resume/"
