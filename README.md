@@ -10,7 +10,9 @@ I followed these tutorials ([1](http://www.moxie.io/post/static-websites-with-hu
 
 Copy [.env.sample](.env.sample) to .env and fill in phone number.
 
-Run `make resume` and preview resulting [web](static/resume/resume.pdf) (no phone #) and [private](resume.pdf) versions
+Run `make serve`, preview the website at http://localhost:1313 and view the [private resume pdf](resume.pdf).
+
+Run `make site` to generate the site to the docs/ folder, then commit and push changes to `master` branch.
 
 # Scratchspace
 
