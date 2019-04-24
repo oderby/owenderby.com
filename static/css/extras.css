@@ -78,7 +78,6 @@ div.resume {
     margin: 0px 0px 40px 0px;
 }
 section > header {
-    text-transform:;
     font-size:30px;
     margin-bottom:10px;
 }
@@ -89,8 +88,8 @@ section > hr {
 }
 
 .resume h3 {
-    font-size:25px;
-    margin-top:0px;
+    font-size: 22px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -110,6 +109,10 @@ section > hr {
 
 .resume-section {
     margin-left:20px;
+}
+
+.resume-location {
+    font-size: 16px;
 }
 
 span.date {
@@ -135,6 +138,10 @@ div.resume .avatar {
 
 div.resume .avatar img {
     margin-bottom: 15px;
+}
+
+div.resume .summary {
+    padding-top: 12px;
 }
 
 div.resume > header {

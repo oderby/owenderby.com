@@ -7,7 +7,7 @@
         <header>
           <div class="row middle-xs">
           <div class="avatar col-xs-12 col-sm-4">
-            <h3><strong>{{ .Site.Params.author }}</strong></h3>
+            <!-- <h3><strong>{{ .Site.Params.author }}</strong></h3> -->
             <img class="img-circle avatar" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
             {{ partial "social.html" . }}
             <div class="download">
@@ -15,11 +15,9 @@
             </div>
           </div>
           <div class="summary col-xs-12 col-sm-8">
-            <br />
-            <p><strong>About me: </strong>{{ .Site.Data.resume.basics.summary | markdownify }}</p>
+            <p>{{ .Site.Data.resume.basics.summary | markdownify }}</p>
           </div>
         </header>
-        <!-- <article class="col-sm-9"> -->
         <section>
           <header>Experience</header>
           <hr />
@@ -28,10 +26,7 @@
             <div class="resume-subsection">
               <h3>
                 {{ if isset . "website" }}
-                <a href="{{ .website }}" target="blank">{{ .company }}</a>
-                {{ else }}
-                {{ .company }}
-                {{ end }}
+                <a href="{{ .website }}" target="blank">{{ .company }}</a>{{ else }}{{ .company }}{{ end }}, {{ .location }}
               </h3>
               {{ with .summary }}<span>{{ . }}</span>{{ end }}
               {{ range .positions }}
