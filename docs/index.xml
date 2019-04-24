@@ -1414,6 +1414,10 @@ promising.&lt;/li&gt;
         - An open-source poker hand equity calculator library, written in C with
         bindings for C and Java. Available for PC, Mac and Linux.
       &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/flexgp/flexgp&#34;&gt;FlexGP&lt;/a&gt;&lt;/strong&gt;
+        - Code from my thesis on scaling evolutionary algorithms to run on cloud infrastructure.
+      &lt;/h5&gt;
 
       &lt;!-- &lt;h5&gt; --&gt;
       &lt;!--   &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; --&gt;

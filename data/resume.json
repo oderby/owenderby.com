@@ -6,23 +6,38 @@
       "city": "San Francisco",
       "region": "CA"
     },
-    "about": "A self-motivated, versatile software engineer with strong product sensibilities. Collaborative, thorough and quick to learn new tools. Results and impact are more important to me than technology used.",
-    "summary": "I'm an engineer: I like solving problems and fixing things. Whether it's tracking down a bug or building new services, I'm adept at jumping into a variety of different projects and producing results. I prefer building backends and systems, but find myself producing a lot of javascript lately (a necessary evil of building things for the web). Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I like traveling, taking photos, and playing a variety of games with friends (so long as the game involves more thinking than randomness). I also care about having a positive impact on our planet and society. Currently, I'm helping build and run [5calls.org](https://5calls.org), but I am always looking for other ways to get involved."
+    "about": "A self-motivated, versatile software engineer with strong product sensibilities and leadership skills. Collaborative, thorough and quick to learn new tools. Results and impact are more important to me than technology used.",
+    "summary": "Hi, I'm Owen Derby. I'm a software engineer.\n\nI like solving problems and fixing things. Whether it's tracking down a bug or building new services, I'm adept at jumping into a variety of different projects and producing results. While I prefer building backends and architecting systems, I'm not afraid of the occasional JS/HTML/CSS. Currently, I'm really enjoying using Terraform to manage infrastructure resources in code. Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I enjoy traveling, playing basketball, and challenging friends to board games (so long as the game involves more thinking than dice rolling). I also care about having a positive impact on our planet and society."
   },
   "work": [
     {
       "company": "Remix",
       "website": "https://remix.com",
+      "location": "San Francisco, CA",
       "positions": [
         {
-          "title": "Software Engineer",
-          "startDate": "2017-07-10"
+          "title": "Staff Engineer",
+          "startDate": "2018-08-01",
+          "highlights": [
+            "Designed and built a secure environment for ingesting and warehousing sensitive data, leveraging AWS ECS, RDS, Apache Airflow, and Terraform, to support the [New Mobility product](https://www.remix.com/new-mobility)",
+            "Provided organizational leadership by instituting processes for proposing architectural changes, prioritizing technical debt, and managing customer support requests."
+          ]
+        },
+        {
+          "title": "Technical Lead",
+          "startDate": "2017-07-10",
+          "endDate": "2018-08-01",
+          "highlights": [
+            "Researched, tested and implemented a methodology for estimating transit system operating costs in Ruby on Rails backend service for the [Transit product](https://www.remix.com/transit).",
+            "Worked closely with product and design to create a product roadmap, ship features, and iterate quickly.", 
+            "Implemented a performance benchmarking system to instrument critical user flows, track performance over time and alert on regressions."
+          ]
         }
       ]
     },
     {
-      "company": "Flux Factory, Inc.",
-      "website": "https://flux.io",
+      "company": "Flux Factory Inc.",
+      "location": "San Francisco, CA",
       "positions": [
         {
           "title": "Technical Product Manager",
@@ -40,14 +55,15 @@
           "endDate": "2015-05-01",
           "highlights": [
             "Designed, built and deployed backend services in Go and associated SQL databases for user data, accounts and Stripe payments.",
-            "Created pipelines for collecting, cleaning, and combining GIS and zoning code data, and Angular components for displaying the result in the [Metro](https://blog.flux.io/flux-metro-what-we-learned-11fc82b6de03) product.",
+            "Created pipelines for collecting, cleaning, and combining GIS and zoning code data, and Angular components for displaying the result in the [Metro](https://youtu.be/iosoYZ_4uwE) product.",
             "Implemented logical subsystems for a 'building configurator' application, while helping re-scope the project mid-contract to deliver a reduced set of features on time."
           ]
         }
       ]
     },
     {
-      "company": "MIT CSAIL, ALFA Group",
+      "company": "MIT CSAIL - ALFA Group",
+      "location": "Cambridge, MA",
       "website": "https://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/index.php",
       "positions": [
         {
@@ -55,7 +71,7 @@
           "startDate": "2012-06-01",
           "endDate": "2013-05-31",
           "highlights": [
-            "Developed [FlexGP](http://hdl.handle.net/1721.1/85216) – a distributed, heterogeneous genetic programming system for machine learning.",
+            "Developed [FlexGP](http://flexgp.github.io/flexgp/) – a distributed, heterogeneous genetic programming system for machine learning.",
             "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation.",
             "Published 2 papers and presented my research at the preeminent conference for genetic and evolutionary computation."
           ]
@@ -72,8 +88,10 @@
       ]
     },
     {
-      "company": "Jaybridge Robotics, Autonomous Agriculture Group",
+      "company": "Jaybridge Robotics - Autonomous Agriculture Group",
+      "location": "Cambridge, MA",
       "website": "http://www.jaybridge.com/",
+      "omit": true,
       "positions": [
         {
           "title": "Software Engineering Intern",
@@ -87,7 +105,8 @@
       ]
     },
     {
-      "company": "Mission Critical Technologies, Machine Learning and Controls Lab",
+      "company": "NASA AMES - Machine Learning and Controls Lab",
+      "location": "Mountain View, CA",
       "omit": true,
       "positions": [
         {
@@ -102,7 +121,8 @@
       ]
     },
     {
-      "company": "iRobot Corporation, iRobot 710 Warrior",
+      "company": "iRobot Corporation - iRobot 710 Warrior",
+      "location": "Bedford, MA",
       "omit": true,
       "positions": [
         {
@@ -191,15 +211,15 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Python", "JavaScript", "Go", "HTML/CSS", "Java", "C/C++"]
+      "keywords": ["Python", "JavaScript", "Ruby", "Go", "HTML/CSS", "Java", "C"]
     },
     {
       "name": "Software & Tools",
-      "keywords": ["git", "svn", "Jira", "gerrit", "Mixpanel/GA", "QGIS"]
+      "keywords": ["git", "Mixpanel/GA", "CircleCI", "Jira", "gerrit"]
     },
     {
       "name": "Deployment & DBs",
-      "keywords": ["GCS", "AWS", "Docker", "MySQL", "MongoDB"]
+      "keywords": ["AWS", "Terraform", "Docker", "Postgres", "GCS"]
     }
   ],
   "_languages": [
@@ -208,8 +228,8 @@
       "fluency": "Native speaker"
     }
   ],
-  "interests": ["Board Games", "Ping Pong", "Cooking",
-                "Exploring new cities", "Robotics", "Soccer" ],
+  "interests": ["Board Games", "Ping Pong", "Cooking", "Soccer",
+                "Exploring new cities", "Robotics", "Basketball" ],
   "_references": [
     {
       "name": "",

@@ -1,7 +1,7 @@
 body {
   font: 12px 'Source Sans Pro', sans-serif;
   line-height: 1.4;
-  margin-top: 20px;
+  margin-top: 0.75in;
   margin-bottom: 0px;
 }
 em {
@@ -35,9 +35,16 @@ li {
 
 .header {
   margin-bottom: 25px;
+  width: 100%;
 }
 .nameBlock {
-    flex-basis: 10em;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.contactBlock {
+  flex: 1;
+  display: block;
 }
 
 .right {
@@ -65,8 +72,8 @@ li {
 
 .sectionTitle {
   margin-top: 15px;
-  font-variant: small-caps;
-  font-size: medium;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .sectionLine {
@@ -82,7 +89,7 @@ li {
 }
 
 .sectionName {
-  width: 30px;
+  width: 0px;
   vertical-align: top;
   display: inline-block;
 }
@@ -97,10 +104,6 @@ li {
   padding-left: 20px;
   margin-top: 0px;
   list-style-type: circle;
-}
-
-.sectionContent .title {
-  font-weight: bold;
 }
 
 .role {
@@ -138,7 +141,7 @@ li {
 }
 
 .multi-column > li {
-  margin-left: 8px;
+  margin-left: 18px;
 }
 
 ul.multi-column {
@@ -184,6 +187,7 @@ tt {
   body {
     background: #fff;
   }
+
   #resume {
     margin: 0 auto;
     max-width: 600px;
@@ -192,6 +196,10 @@ tt {
     background: #fff;
     box-shadow: none;
     -webkit-box-shadow: none;
+  }
+
+  @page { 
+    margin: 0; 
   }
 
   a {

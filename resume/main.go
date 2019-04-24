@@ -1,15 +1,17 @@
 package main
 
 import (
+	"log"
 	"flag"
 	"fmt"
 	"io/ioutil"
 	"os"
 
     "github.com/aymerick/raymond"
-	"github.com/BurntSushi/toml"
-	"github.com/russross/blackfriday"
 	"github.com/bitly/go-simplejson"
+	"github.com/BurntSushi/toml"
+	"github.com/joho/godotenv"
+	"github.com/russross/blackfriday"
 	"github.com/spf13/cast"
 )
 
@@ -88,6 +90,11 @@ func exportHtml(htmlString string, forWeb bool) error {
 }
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+	  log.Fatal("Error loading .env file")
+	}
+
 	phoneNum := flag.String("p", os.Getenv("PHONE"), "phone #")
 	flag.Parse()
 
@@ -96,6 +103,7 @@ func main() {
 
 	makeResume("")
 	if (*phoneNum != "") {
+		log.Print("generating private resume with phone #")
 		makeResume(*phoneNum)
 	}
 }
