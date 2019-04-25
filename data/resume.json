@@ -19,7 +19,7 @@
           "title": "Staff Engineer",
           "startDate": "2018-08-01",
           "highlights": [
-            "Designed and built a secure environment for ingesting and warehousing sensitive data, leveraging AWS ECS, RDS, Apache Airflow, and Terraform, to support the [New Mobility product](https://www.remix.com/new-mobility)",
+            "Designed and built a secure environment for ingesting and warehousing sensitive data, leveraging AWS ECS, RDS, Apache Airflow, and Terraform, to support the [New Mobility product](https://www.remix.com/new-mobility).",
             "Provided organizational leadership by instituting processes for proposing architectural changes, prioritizing technical debt, and managing customer support requests."
           ]
         },
