@@ -3,13 +3,29 @@
     "name": "Owen C. Derby",
     "website": "owenderby.com",
     "location": {
-      "city": "San Francisco",
+      "city": "Oakland",
       "region": "CA"
     },
-    "about": "A self-motivated, versatile software engineer with strong product sensibilities and leadership skills. Collaborative, thorough and quick to learn new tools. Results and impact are more important to me than technology used.",
-    "summary": "Hi, I'm Owen Derby. I'm a software engineer.\n\nI like solving problems and fixing things. Whether it's tracking down a bug or building new services, I'm adept at jumping into a variety of different projects and producing results. While I prefer building backends and architecting systems, I'm not afraid of the occasional JS/HTML/CSS. Currently, I'm really enjoying using Terraform to manage infrastructure resources in code. Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I enjoy traveling, playing basketball, and challenging friends to board games (so long as the game involves more thinking than dice rolling). I also care about having a positive impact on our planet and society."
+    "about": "A self-motivated, versatile software engineer with strong product sensibilities and leadership skills. Collaborative, thorough and quick to learn new tools. Results and impact are more important to me than technology used. Based in Oakland, CA and looking exclusively at climate tech companies.",
+    "summary": "Hi, I'm Owen Derby. I'm a staff software engineer.\n\nI like solving problems and fixing things. Whether it's tracking down a bug or building new services, I'm adept at jumping into a variety of different projects and producing results. While I prefer building backends and architecting systems, I'm not afraid of the occasional JS/HTML/CSS. Currently, I'm really enjoying using Terraform to manage infrastructure resources in code. Detail-oriented and thorough, I take pride in my work.\n\nWhen I'm not working, I enjoy traveling, playing basketball, and challenging friends to board games. I also care about having a positive impact on our planet and society."
   },
   "work": [
+    {
+      "company": "Remix by Via",
+      "website": "https://ridewithvia.com/",
+      "location": "Berlin, Germany",
+      "positions": [
+        {
+          "title": "Staff Engineer",
+          "startDate": "2021-03-10",
+          "endDate": "2022-09-30",
+          "highlights": [
+            "Rearchitected the travel time analysis tool to [leverage OpenStreetMap data](https://www.remix.com/blog/introducing-jane-3-0-a-more-accurate-jane), producing significantly more accurate and reliable results for customers, while maintaining average response times.",
+            "Led the launch of the [Remix EU region](https://www.remix.com/blog/remix-is-now-hosted-in-the-eu), including capacity planning, customer communications and live data migrations, with zero data loss and no downtime for non EU customers."
+          ]
+        }
+      ]
+    },
     {
       "company": "Remix",
       "website": "https://remix.com",
@@ -18,8 +34,9 @@
         {
           "title": "Staff Engineer",
           "startDate": "2018-08-01",
+          "endDate": "2021-03-10",
           "highlights": [
-            "Designed and built a secure environment for ingesting and warehousing sensitive data, leveraging AWS ECS, RDS, Apache Airflow, and Terraform, to support the [New Mobility product](https://www.remix.com/new-mobility).",
+            "Designed and built a secure environment for ingesting and warehousing sensitive geospatial data, leveraging AWS ECS, RDS, Apache Airflow, and Terraform, for downstream data products.",
             "Provided organizational leadership by instituting processes for proposing architectural changes, prioritizing technical debt, and managing customer support requests."
           ]
         },
@@ -29,7 +46,7 @@
           "endDate": "2018-08-01",
           "highlights": [
             "Researched, tested and implemented a methodology for estimating transit system operating costs in Ruby on Rails backend service for the [Transit product](https://www.remix.com/transit).",
-            "Worked closely with product and design to create a product roadmap, ship features, and iterate quickly.", 
+            "Worked closely with product and design to create a product roadmap, ship features, and iterate quickly.",
             "Implemented a performance benchmarking system to instrument critical user flows, track performance over time and alert on regressions."
           ]
         }
@@ -45,7 +62,9 @@
           "endDate": "2016-08-17",
           "highlights": [
             "Led company through a 4 month pivot to a new SAAS data-interchange product for computational designers.",
-            "Established KPIs for the product, a roadmap to achieve them and oversaw its implementation by development teams, resulting in adoption by thousands of users from a niche market in 6 months.",
+            "Ran goal-setting and implementation for the product, resulting in adoption by thousands of users from a niche market in 6 months."
+          ],
+          "extra_highlights": [
             "Analyzed user behavior to prioritize new features and support sales and marketing in targeting customers."
           ]
         },
@@ -55,7 +74,7 @@
           "endDate": "2015-05-01",
           "highlights": [
             "Designed, built and deployed backend services in Go and associated SQL databases for user data, accounts and Stripe payments.",
-            "Created pipelines for collecting, cleaning, and combining GIS and zoning code data, and Angular components for displaying the result in the [Metro](https://youtu.be/iosoYZ_4uwE) product.",
+            "Created pipelines for collecting, cleaning, and combining GIS and zoning code data, and Angular components for displaying the result in the Metro product.",
             "Implemented logical subsystems for a 'building configurator' application, while helping re-scope the project mid-contract to deliver a reduced set of features on time."
           ]
         }
@@ -71,7 +90,9 @@
           "startDate": "2012-06-01",
           "endDate": "2013-05-31",
           "highlights": [
-            "Developed [FlexGP](http://flexgp.github.io/flexgp/) – a distributed, heterogeneous genetic programming system for machine learning.",
+            "Developed [FlexGP](http://flexgp.github.io/flexgp/) - a distributed, heterogeneous genetic programming system for machine learning."
+          ],
+          "extra_highlights": [
             "Created a framework for running and analyzing FlexGP on an OpenStack cloud computing implementation.",
             "Published 2 papers and presented my research at the preeminent conference for genetic and evolutionary computation."
           ]
@@ -158,6 +179,7 @@
         {
           "area": "Computer Science",
           "studyType": "Masters of Engineering",
+          "focus": "Machine Learning & Distributed Systems",
           "endDate": "2013-06-01",
           "gpa": "5.0"
         },
@@ -211,15 +233,15 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Python", "JavaScript", "Ruby", "Go", "HTML/CSS", "Java", "C"]
+      "keywords": ["Python", "Ruby", "TypeScript", "JavaScript", "Go"]
     },
     {
       "name": "Software & Tools",
-      "keywords": ["git", "Mixpanel/GA", "CircleCI", "Jira", "gerrit"]
+      "keywords": ["git", "CircleCI", "Mixpanel/GA", "Jira", "gerrit"]
     },
     {
       "name": "Deployment & DBs",
-      "keywords": ["AWS", "Terraform", "Docker", "Postgres", "GCS"]
+      "keywords": ["AWS", "Postgres", "Terraform", "Docker", "GCS"]
     }
   ],
   "_languages": [

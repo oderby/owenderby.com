@@ -75,12 +75,14 @@
               <div class="col-xs-3 right">{{ dateFormat "January 2006" .endDate }}</div>
             </div>
             {{ end }}
+            {{ with .courses }}
             <br />
             <div>
               <p><strong>Relevant Coursework: </strong>
-                {{ delimit .courses ", " }}
+                {{ delimit . ", " }}
               </p>
             </div>
+            {{ end }}
           </div>
           {{ end }}
         </section>

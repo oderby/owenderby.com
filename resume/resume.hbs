@@ -161,16 +161,11 @@
             {{#each degrees}}
             <div>
               <span class='role'>
-                {{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if gpa}}, GPA: {{gpa}}{{/if}}
+                {{#if studyType}}{{studyType}}{{/if}}{{#if area}} in {{area}}{{/if}}{{#if focus}} - {{focus}}{{/if}}{{#if gpa}}, GPA: {{gpa}}{{/if}}
               </span>
               <span class='date'>{{dateFormat "Jan 2006" endDate}}</span>
             </div>
             {{/each}}
-            {{#if courses}}
-            <div id='coursesBlock'>
-              <span><strong>Relevant Coursework: </strong></span>{{#each courses}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}
-            </div>
-            {{/if}}
           </div>
           {{#unless @last}}<div class='separator'></div>{{/unless}}
           {{/each}}
